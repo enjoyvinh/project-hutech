@@ -1,0 +1,7 @@
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\bin\Release\Servies.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\bin\Release\Servies.pdb
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\bin\Release\DAOs.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\bin\Release\DAOs.pdb
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\obj\Release\Servies.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\obj\Release\Servies.pdb

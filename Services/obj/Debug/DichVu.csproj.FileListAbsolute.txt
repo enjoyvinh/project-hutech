@@ -1,0 +1,93 @@
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\Services\bin\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\Services\bin\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\Services\obj\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\Services\obj\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\RestaurantManagerment\Services\bin\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\RestaurantManagerment\Services\bin\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\RestaurantManagerment\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\RestaurantManagerment\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\RestaurantManagerment\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\RestaurantManagerment\Services\obj\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\RestaurantManagerment\Services\obj\Debug\DichVu.pdb
+C:\Users\Út\Desktop\RestaurantManagerment\Services\bin\Debug\DichVu.dll
+C:\Users\Út\Desktop\RestaurantManagerment\Services\bin\Debug\DichVu.pdb
+C:\Users\Út\Desktop\RestaurantManagerment\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\Út\Desktop\RestaurantManagerment\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\Út\Desktop\RestaurantManagerment\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\Út\Desktop\RestaurantManagerment\Services\obj\Debug\DichVu.dll
+C:\Users\Út\Desktop\RestaurantManagerment\Services\obj\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\Services\bin\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\Services\bin\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\Services\obj\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\Services\obj\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\Services\bin\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\Services\bin\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\Services\obj\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\Services\obj\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\Services\bin\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\Services\bin\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\Services\bin\Debug\EntityFramework.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\Services\bin\Debug\EntityFramework.xml
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\Services\obj\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\Services\obj\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\bin\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\bin\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\obj\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\obj\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\Services\bin\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\Services\bin\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\Services\obj\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\Services\obj\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\NewsWebsite\Services\bin\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\NewsWebsite\Services\bin\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\NewsWebsite\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\NewsWebsite\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\NewsWebsite\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\NewsWebsite\Services\obj\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\NewsWebsite\Services\obj\Debug\DichVu.pdb
+E:\chuyen de 2\NewsWebsite\NewsWebsite\Services\bin\Debug\DichVu.dll
+E:\chuyen de 2\NewsWebsite\NewsWebsite\Services\bin\Debug\DichVu.pdb
+E:\chuyen de 2\NewsWebsite\NewsWebsite\Services\bin\Debug\TruyXuatDB.dll
+E:\chuyen de 2\NewsWebsite\NewsWebsite\Services\bin\Debug\TruyXuatDB.pdb
+E:\chuyen de 2\NewsWebsite\NewsWebsite\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+E:\chuyen de 2\NewsWebsite\NewsWebsite\Services\obj\Debug\DichVu.dll
+E:\chuyen de 2\NewsWebsite\NewsWebsite\Services\obj\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\WebTinTuc\Services\bin\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\WebTinTuc\Services\bin\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\WebTinTuc\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\WebTinTuc\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\WebTinTuc\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\WebTinTuc\Services\obj\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\WebTinTuc\Services\obj\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\Services\bin\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\Services\bin\Debug\DichVu.pdb
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\Services\obj\Debug\DichVu.dll
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\Services\obj\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\bin\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\bin\Debug\DichVu.pdb
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\obj\Debug\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\obj\Debug\DichVu.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\obj\Debug\DichVu.pdb
