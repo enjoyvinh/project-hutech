@@ -1,0 +1,7 @@
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\bin\Release\DichVu.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\bin\Release\DichVu.pdb
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\bin\Release\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\bin\Release\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\obj\Release\DichVu.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\obj\Release\DichVu.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\Services\obj\Release\DichVu.pdb
