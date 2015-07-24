@@ -1,0 +1,82 @@
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\Út\Desktop\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\Út\Desktop\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\Út\Desktop\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\Út\Desktop\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\Út\Desktop\RestaurantManagerment\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\SaleManagement\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\DAO\bin\Debug\TruyXuatDB.dll.config
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\DAO\bin\Debug\EntityFramework.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\DAO\bin\Debug\EntityFramework.xml
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite20150513\NewsWebsite\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\bin\Debug\TruyXuatDB.dll.config
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\DAO\bin\Debug\TruyXuatDB.dll.config
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\NewsWebsite\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\NewsWebsite\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\NewsWebsite\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\NewsWebsite\DAO\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Vinh\Desktop\NewsWebsite\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\NewsWebsite\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\NewsWebsite\DAO\obj\Debug\DBTruyXuat.csprojFakesResolveAssemblyReference.cache
+E:\chuyen de 2\NewsWebsite\NewsWebsite\DAO\bin\Debug\TruyXuatDB.dll
+E:\chuyen de 2\NewsWebsite\NewsWebsite\DAO\bin\Debug\TruyXuatDB.pdb
+E:\chuyen de 2\NewsWebsite\NewsWebsite\DAO\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+E:\chuyen de 2\NewsWebsite\NewsWebsite\DAO\obj\Debug\DBTruyXuat.csprojFakesResolveAssemblyReference.cache
+E:\chuyen de 2\NewsWebsite\NewsWebsite\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+E:\chuyen de 2\NewsWebsite\NewsWebsite\DAO\obj\Debug\TruyXuatDB.dll
+E:\chuyen de 2\NewsWebsite\NewsWebsite\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\WebTinTuc\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\WebTinTuc\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\WebTinTuc\DAO\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Vinh\Desktop\WebTinTuc\DAO\obj\Debug\DBTruyXuat.csprojFakesResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\WebTinTuc\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\WebTinTuc\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\WebTinTuc\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\CMS\WebTinTuc20150518\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\WebTinTuc20150518\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\WebTinTuc20150518\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\WebTinTuc20150518\DAO\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Vinh\Desktop\WebTinTuc20150518\DAO\obj\Debug\DBTruyXuat.csprojFakesResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\WebTinTuc20150518\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\WebTinTuc20150518\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\WebTinTuc20150518\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\obj\Debug\DBTruyXuat.csprojFakesResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\obj\Debug\DBTruyXuat.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\obj\Debug\TruyXuatDB.pdb

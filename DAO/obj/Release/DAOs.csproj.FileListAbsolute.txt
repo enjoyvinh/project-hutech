@@ -1,0 +1,9 @@
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Release\DAOs.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Release\DAOs.pdb
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Release\EntityFramework.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Release\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Release\EntityFramework.xml
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\obj\Release\DAOs.dll
+C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\obj\Release\DAOs.pdb
