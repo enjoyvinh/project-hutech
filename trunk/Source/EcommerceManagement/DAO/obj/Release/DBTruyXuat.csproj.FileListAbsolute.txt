@@ -1,0 +1,5 @@
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\bin\Release\TruyXuatDB.dll.config
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\bin\Release\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\bin\Release\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\obj\Release\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\CMS\NewsWebsite\DAO\obj\Release\TruyXuatDB.pdb

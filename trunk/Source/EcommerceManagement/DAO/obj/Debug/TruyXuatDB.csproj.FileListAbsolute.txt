@@ -1,0 +1,10 @@
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\bin\Debug\TruyXuatDB.pdb
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.dll
+C:\Users\Vinh\Desktop\RestaurantManagerment\DAO\obj\Debug\TruyXuatDB.pdb

@@ -1,0 +1,5 @@
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\bin\Debug\DAO.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\bin\Debug\DAO.pdb
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\obj\Debug\DAO.dll
+C:\Users\thanh-vinh\Desktop\RestaurantManagerment\RestaurantManagerment\DAO\obj\Debug\DAO.pdb
