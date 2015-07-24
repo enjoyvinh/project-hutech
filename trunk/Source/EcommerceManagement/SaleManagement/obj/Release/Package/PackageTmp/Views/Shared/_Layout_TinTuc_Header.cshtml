@@ -1,0 +1,44 @@
+﻿@using DBTruyXuat.Common;
+@using TruyXuatDB;
+@using TruyXuatDB.DAO;
+@using TruyXuatDB.DTO;
+@{
+    TheLoaiDAO theLoaiDAO = new TheLoaiDAO();
+    Request_QuanLyTheLoai_ParamTimKiem param =  new Request_QuanLyTheLoai_ParamTimKiem();
+    List<View_QuanLyTheLoai_TheLoai> dsTheLoai = theLoaiDAO.getDanhSachTheLoai(param);
+}
+
+<div class="banner clr">
+    <!--Begin banner-->
+    <a href="TrangChu">
+        <img src="~/Images/1377315993_banner.png" alt="Home">
+    </a>
+</div>
+<!--End banner-->
+<div class="mainnav clr">
+    <div class="nav">
+        <ul class="listnav count_8">
+
+            <li class="home"><a href="~/TinTuc/TrangChu"></a></li>
+            @foreach (var item in dsTheLoai)
+            {
+            <li class="">
+                <a href="~/TinTuc/TheLoai/@item.MATHELOAI">@item.TENTHELOAI</a>
+            </li>
+            }
+        </ul>
+    </div>
+    <!--End -->
+    <div class="bottomnav">
+        <p class="datetime">@DateTime.Now</p>
+        <div class="botnav_right">
+            <div class="searchtop">
+                <input class="searchtxt" autocomplete="on" id="keyword" onkeypress="return send_url_2(event);" type="text" name="keyword" value="Tìm kiếm ..." onclick="if ( this.value == &#39;Tìm kiếm ...&#39; ) { this.value=&#39;&#39;; }" onblur="if ( this.value == &#39;&#39; ) { this.value = &#39;Tìm kiếm ...&#39;; }">
+                <input class="searchbtn" type="submit" name="submit">
+            </div>
+        </div>
+    </div>
+    <!--End -->
+</div>
+<!--End mainnav-->
+<div class="wraper clr">

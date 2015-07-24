@@ -1,0 +1,124 @@
+﻿@using DBTruyXuat.Common;
+@using TruyXuatDB;
+@using TruyXuatDB.DAO;
+@using TruyXuatDB.DTO;
+@{
+        
+    if (ViewContext.RouteData.Values["id"] == null)
+    {
+        Response.Redirect("~/Error/NotFound");
+    }
+
+    String id = ViewContext.RouteData.Values["id"].ToString();
+    
+    TheLoaiDAO TheLoaiDAO = new TheLoaiDAO();
+    
+    Request_QuanLyTheLoai_ParamTimKiem paramTheLoai = new Request_QuanLyTheLoai_ParamTimKiem();
+    paramTheLoai.MATHELOAI = Convert.ToInt32(id);
+
+    View_QuanLyTheLoai_TheLoai ctTheLoai = TheLoaiDAO.getChiTietTheLoai(paramTheLoai);
+
+    if (ctTheLoai.MATHELOAI == null)
+    {
+        Response.Redirect("~/Error/NotFound");
+    }
+
+    BanTinDAO BanTinDAO = new BanTinDAO();
+
+    Request_QuanLyBanTin_ParamTimKiem paramBanTin = new Request_QuanLyBanTin_ParamTimKiem();
+    List<Int32> arrID = new List<Int32>();
+    arrID.Add(Convert.ToInt32(ctTheLoai.MATHELOAI));
+    paramBanTin.MATHELOAI = arrID;
+    paramBanTin.TUNGAY = new DateTime(1990, 1, 1, 0, 0, 0);
+    paramBanTin.DENNGAY = DateTime.Now;
+    List<View_QuanLyBanTin_BanTin> dsBanTin = BanTinDAO.getDanhSachBanTin(paramBanTin);
+
+    String hostImage = Request.Url.Scheme + "://" + Request.Headers["host"] + "/Images/HinhAnhBanTin/";
+
+    //Page.Title = ctBanTin.TIEUDE;
+}
+
+
+@Html.Partial("~/Views/Shared/_Layout_TinTuc_Header.cshtml")
+@Html.Partial("~/Views/Shared/_Layout_TinTuc_Menu.cshtml")
+
+
+<div class="mainblock left col-xs-12 col-sm-9">
+    <div class="page_top clr">
+        <h1><a title="Sự Kiện" href="~/TinTuc/TheLoai/@ctTheLoai.MATHELOAI">@ctTheLoai.TENTHELOAI</a></h1>
+        <!--<p><span class="update_time">Cập nhật thứ tư, ngày 10/07/13 09:15 sáng</span></p>-->
+    </div>
+    <!--End page_top-->
+
+    <div class="category_featured clr">
+        <ul class="cate_featured">
+            <li class="topnews">
+                <a>
+                    <img src="./sukien_files/1375344487_badoanjpg1375281700500x0.jpg"></a>
+                <h2>
+                    <a title="Phó chủ tịch nước đề nghị bỏ kỳ thi tốt nghiệp THPT" 
+                        href="http://demow204.web4s.vn/chi-tiet-tin/pho-chu-tich-nuoc-de-nghi-bo-ky-thi-tot-nghiep-thpt.html">
+                        Phó chủ tịch nước đề nghị bỏ kỳ thi tốt nghiệp THPT
+                    </a>
+                </h2>
+            </li>
+            <li>
+                <a>
+                    <img src="./sukien_files/1375344254_jebinchmf1375326503500x0.jpg"></a>
+                <h2><a title="Bão Jebi tăng cấp trên biển Đông" href="http://demow204.web4s.vn/chi-tiet-tin/bao-jebi-tang-cap-tren-bien-dong.html">Bão Jebi tăng cấp trên biển Đông</a></h2>
+                <p class="chapeau">Sau khi vào biển Đông, bão Jebi đang mạnh dần lên. Cơn bão được nhận định sẽ quét qua đảo Hải Nam (Trung Quốc) với cường độ mạnh cấp 10 trước khi tiến vào vịnh Bắc Bộ.</p>
+            </li>
+            <li class="last">
+                <a>
+                    <img src="./sukien_files/1375344035_namthanhniennhatbanchecongaiviet.jpg"></a>
+                <h2><a title="Trai Nhật gây &#39;bão Facebook&#39; vì chê gái Việt" href="http://demow204.web4s.vn/chi-tiet-tin/trai-nhat-gay-39bao-facebook39-vi-che-gai-viet.html">Trai Nhật gây 'bão Facebook' vì chê gái Việt</a></h2>
+                <p class="chapeau">"Những cô gái Việt toàn chia sẻ những thứ họ ăn, quần áo và những cuộc mua sắm... Họ không hề có quan điểm gì về xã hội".</p>
+            </li>
+        </ul>
+        <h2 class="sec_title">Đọc nhiều</h2>
+        <ul class="cate_topview">
+            <li><a title="Bạn gái hot girl của Trấn Thành khoe nhà đẹp lung linh" href="http://demow204.web4s.vn/chi-tiet-tin/ban-gai-hot-girl-cua-tran-thanh-khoe-nha-dep-lung-linh.html">
+                <img src="./sukien_files/1376641543_bangaihotgirlcuatranthanhkhoenha.jpg"><h2>Bạn gái hot girl của Trấn Thành khoe nhà đẹp lung linh</h2>
+            </a></li>
+            <li><a title="Cô gái xinh đẹp đạp xe 1.200 km về nhà" href="http://demow204.web4s.vn/chi-tiet-tin/co-gai-xinh-dep-dap-xe-1200-km-ve-nha.html">
+                <img src="./sukien_files/1374488132_girlxinhdep.jpg"><h2>Cô gái xinh đẹp đạp xe 1.200 km về nhà</h2>
+            </a></li>
+            <li><a title="Trai Nhật gây &#39;bão Facebook&#39; vì chê gái Việt" href="http://demow204.web4s.vn/chi-tiet-tin/trai-nhat-gay-39bao-facebook39-vi-che-gai-viet.html">
+                <img src="./sukien_files/1375344035_namthanhniennhatbanchecongaiviet.jpg"><h2>Trai Nhật gây 'bão Facebook' vì chê gái Việt</h2>
+            </a></li>
+            <li><a title="Bão Jebi tăng cấp trên biển Đông" href="http://demow204.web4s.vn/chi-tiet-tin/bao-jebi-tang-cap-tren-bien-dong.html">
+                <img src="./sukien_files/1375344254_jebinchmf1375326503500x0.jpg"><h2>Bão Jebi tăng cấp trên biển Đông</h2>
+            </a></li>
+            <li><a title="Phó chủ tịch nước đề nghị bỏ kỳ thi tốt nghiệp THPT" href="http://demow204.web4s.vn/chi-tiet-tin/pho-chu-tich-nuoc-de-nghi-bo-ky-thi-tot-nghiep-thpt.html">
+                <img src="./sukien_files/1375344487_badoanjpg1375281700500x0.jpg"><h2>Phó chủ tịch nước đề nghị bỏ kỳ thi tốt nghiệp THPT</h2>
+            </a></li>
+        </ul>
+    </div>
+
+
+
+    @foreach (var item in dsBanTin)
+    {
+        <!--End category_featured-->
+        <div class="folder_cate clr">
+            <div class="folder clr">
+                <h3 class="tab_tittle">
+                    <a class="cat_tittle" href="~/TinTuc/BanTin/@item.MABANTIN">@item.TIEUDE</a></h3>
+                <div class="folder_ctn">
+                    <a class="folder_img">
+                        <img width="400px" height="300px" src="~/Images/spacer.gif" 
+                            style="background: url('@hostImage@item.HINHANH') no-repeat center 25%"></a>
+                    <div class="news_text">@item.NOIDUNGTOMTAT</div>
+                </div>
+                <div class="folder_btn">
+                    <!--<div class="social">face, google+, twiter,</div>-->
+                    <a class="readmore" href="~/TinTuc/BanTin/@item.MABANTIN">Đọc tiếp</a>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+<!--End mainblock-->
+
+@Html.Partial("~/Views/Shared/_Layout_TinTuc_Footer.cshtml")
