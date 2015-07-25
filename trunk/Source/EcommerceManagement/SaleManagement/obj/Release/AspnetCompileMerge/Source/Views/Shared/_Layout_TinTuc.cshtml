@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=Utf-8" />
+
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+
+        <!-- Logo Của Website -->
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+        <title>@Page.Title - Tin tức, thể thao, thời sự, xã hội, công nghệ thông tin</title>
+
+        <!-- CSS -->
+        <!-- bootstrap 3.0.2 -->
+        @Styles.Render("~/TinTuc/css")
+        @Scripts.Render("~/bundles/hethongjs")
+        
+    </head>
+    <body>
+  	    
+            @*@RenderSection("featured", required: false)*@
+        <div class="container">
+        <!--Begin container-->
+                @RenderBody()
+       
+        @*@Scripts.Render("~/bundles/jquery")*@
+        @*@RenderSection("scripts", required: false)*@
+    </body>
+</html>
