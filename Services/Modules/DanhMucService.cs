@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TruyXuatDB.Entities;
 
-namespace Servies.Modules
+namespace Services.Modules
 {
     public interface DanhMucService
     {

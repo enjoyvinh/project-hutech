@@ -26,3 +26,10 @@ C:\Users\Vinh\Desktop\SaleManagement\Services\bin\Debug\DAOs.pdb
 C:\Users\Vinh\Desktop\SaleManagement\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\Vinh\Desktop\SaleManagement\Services\obj\Debug\Servies.dll
 C:\Users\Vinh\Desktop\SaleManagement\Services\obj\Debug\Servies.pdb
+C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\Services\bin\Debug\DAOs.dll
+C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\Services\bin\Debug\DAOs.pdb
+C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\Services\bin\Debug\Services.dll
+C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\Services\bin\Debug\Services.pdb
+C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\Services\obj\Debug\Services.dll
+C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\Services\obj\Debug\Services.pdb

@@ -10,10 +10,10 @@ using System.Web.Http;
 using DAOs;
 using DAOs.DTO;
 using WebMatrix.WebData;
-using Servies.Modules;
+using Services.Modules;
 using TruyXuatDB.Entities;
 
-namespace SaleManagement.Controllers
+namespace eCommerceManagement.Controllers
 {
     public class APIQLDanhMucController : ApiController
     {
