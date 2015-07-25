@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAOs", "DAO\DAOs.csproj", "{B5398D03-8DB3-42B1-9705-3BC6AF47A891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{F7633ABE-D04E-49D7-A2CE-0FA81C35F6CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleManagement", "SaleManagement\SaleManagement.csproj", "{139C042A-69CB-41D0-8B5A-5904DFB0A707}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5398D03-8DB3-42B1-9705-3BC6AF47A891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5398D03-8DB3-42B1-9705-3BC6AF47A891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5398D03-8DB3-42B1-9705-3BC6AF47A891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5398D03-8DB3-42B1-9705-3BC6AF47A891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7633ABE-D04E-49D7-A2CE-0FA81C35F6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7633ABE-D04E-49D7-A2CE-0FA81C35F6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7633ABE-D04E-49D7-A2CE-0FA81C35F6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7633ABE-D04E-49D7-A2CE-0FA81C35F6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{139C042A-69CB-41D0-8B5A-5904DFB0A707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{139C042A-69CB-41D0-8B5A-5904DFB0A707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{139C042A-69CB-41D0-8B5A-5904DFB0A707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{139C042A-69CB-41D0-8B5A-5904DFB0A707}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
