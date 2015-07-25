@@ -1,15 +1,16 @@
-﻿using System.Reflection;
+﻿using System.Resources;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WebTinTuc")]
-[assembly: AssemblyDescription("Tin Tức Online")]
+[assembly: AssemblyTitle("eCommerce Management")]
+[assembly: AssemblyDescription("Hệ thống website ứng dụng quản lý sàn thương mại điện tử")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("UC Company")]
-[assembly: AssemblyProduct("Tin Tức Online")]
+[assembly: AssemblyCompany("Skyfire Team - HUTECH")]
+[assembly: AssemblyProduct("eCommerceManagement")]
 [assembly: AssemblyCopyright("Copyright © UC 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -33,3 +34,5 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguage("vi-VN")]
+

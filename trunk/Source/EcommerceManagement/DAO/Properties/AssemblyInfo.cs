@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Resources;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -8,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DAOs")]
 [assembly: AssemblyDescription("Lớp Truy Xuất Database")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Skyfire Team")]
-[assembly: AssemblyProduct("SaleManagement")]
+[assembly: AssemblyCompany("Skyfire Team - HUTECH")]
+[assembly: AssemblyProduct("eCommerceManagement")]
 [assembly: AssemblyCopyright("Copyright © Skyfire Team 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -34,3 +35,5 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguage("en")]
+

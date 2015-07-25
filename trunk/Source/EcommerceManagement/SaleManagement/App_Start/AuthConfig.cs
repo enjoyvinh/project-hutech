@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Web.WebPages.OAuth;
 
-namespace SaleManagement
+namespace eCommerceManagement
 {
     public static class AuthConfig
     {

@@ -12,7 +12,7 @@ using DAOs;
 using DAOs.DTO;
 using WebMatrix.WebData;
 
-namespace SaleManagement.Controllers
+namespace eCommerceManagement.Controllers
 {
 
     public class APIDangNhapController : ApiController

@@ -13,7 +13,7 @@
 //using System.Web.Http;
 //using WebMatrix.WebData;
 
-//namespace SaleManagement.Controllers
+//namespace eCommerceManagement.Controllers
 //{
 
 //    public class APIQLBanTinController : ApiController

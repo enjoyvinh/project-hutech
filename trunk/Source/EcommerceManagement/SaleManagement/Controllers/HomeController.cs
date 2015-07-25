@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using WebMatrix.WebData;
 
-namespace SaleManagement.Controllers
+namespace eCommerceManagement.Controllers
 {
     public class HomeController : Controller
     {

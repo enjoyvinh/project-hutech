@@ -6,8 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Data;
-using System;
-using System.Configuration;
 using System.IO;
 
 /*

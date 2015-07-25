@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAOs", "DAO\DAOs.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{F7633ABE-D04E-49D7-A2CE-0FA81C35F6CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleManagement", "SaleManagement\SaleManagement.csproj", "{139C042A-69CB-41D0-8B5A-5904DFB0A707}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerceManagement", "SaleManagement\eCommerceManagement.csproj", "{139C042A-69CB-41D0-8B5A-5904DFB0A707}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
