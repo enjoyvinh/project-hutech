@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
 
 /*
  *  
@@ -17,19 +16,19 @@ namespace DAOs.Common
 {
     public static class RestaurantCommon
     {
-        public static Boolean txtNumeric(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
-            {
-                return true;
-            }
-            // only allow one decimal point
-            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
-            {
-                return true;
-            }
+        //public static Boolean txtNumeric(object sender, KeyPressEventArgs e)
+        //{
+        //    if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+        //    {
+        //        return true;
+        //    }
+        //    // only allow one decimal point
+        //    if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+        //    {
+        //        return true;
+        //    }
 
-            return false;
-        }
+        //    return false;
+        //}
     }
 }

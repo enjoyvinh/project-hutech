@@ -1,6 +1,7 @@
 ﻿@{
     Page.Title = "Đăng Nhập Hệ Thống Quản Lý";
 }
+
 @Scripts.Render("~/bundles/quanlydanhmucjs")
 @Scripts.Render("~/bundles/quanlydangnhapjs")
 
@@ -10,10 +11,6 @@
         <b>@Html.ActionLink("HỆ THỐNG QUẢN LÝ", "Index", "Home")</b>
       </div><!-- /.login-logo -->
       <div class="login-box-body" ng-controller="QuanLyDangNhapControl" ng-init="" click-event-listener ng-cloak>
-          <webcam channel="myChannel"></webcam>
-
-
-
         <p class="login-box-msg">Đăng Nhập Dashboard Skyfire</p>
         <form id="dangnhapForm" name="dangnhapForm" class="form-horizontal" novalidate>
             <div class="form-group has-feedback" show-errors>

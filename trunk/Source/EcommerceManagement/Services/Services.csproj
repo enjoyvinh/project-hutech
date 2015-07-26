@@ -56,9 +56,7 @@
     <Compile Include="Modules\DanhMucService.cs" />
     <Compile Include="Modules\DanhMucServiceImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Modules\BanTinService.cs" />
     <Compile Include="Modules\DangNhapService.cs" />
-    <Compile Include="Modules\TheLoaiService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAOs.csproj">
