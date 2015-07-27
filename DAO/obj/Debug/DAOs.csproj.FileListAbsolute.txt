@@ -18,17 +18,3 @@ C:\Users\Vinh\Desktop\seminar\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\De
 C:\Users\Vinh\Desktop\seminar\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
 C:\Users\Vinh\Desktop\seminar\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Debug\EntityFramework.xml
 C:\Users\Vinh\Desktop\seminar\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\DAOs.dll
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\DAOs.pdb
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\EntityFramework.dll
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\EntityFramework.xml
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\obj\Debug\DAOs.csprojResolveAssemblyReference.cache
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\obj\Debug\DAOs.dll
-C:\Users\Vinh\Documents\Visual Studio 2015\EcommerceManagement\EcommerceManagement\DAO\obj\Debug\DAOs.pdb
