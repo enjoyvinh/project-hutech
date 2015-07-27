@@ -1,0 +1,305 @@
+﻿
+<aside class="main-sidebar" ng-controller="QuanLyMenuControl" init='init()'>
+
+    <!-- Side Bar For Administrator == administrator-->
+    <section class="sidebar" ng-if="model.sessionDangNhap.phanquyen == 'administrator'">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img ng-src="~/Images/AvatarNhanVien/{{model.sessionDangNhap.manhanvien}}.jpg" class="img-circle" alt="{{model.sessionDangNhap.tennhanvien}}" />
+            </div>
+            <div class="pull-left info">
+                <p>{{model.sessionDangNhap.tennhanvien}}</p>
+                <p>{{model.sessionDangNhap.thoigiandangnhap|date:'dd/MM/yyyy HH:mm:ss'}}</p>
+            </div>
+        </div>
+        <!-- search form -->
+        <form action="" method="post" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="txtKeyword" class="form-control" placeholder="Tìm kiếm..." />
+                <span class="input-group-btn">
+                    <button type='submit' name='btnSearch' id='search-btn' class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li id="menuDashboard">
+                <a href="Dashboard">
+                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="ion-android-cart"></i>
+                    <span>Quản Lý Bán Hàng</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyBanHang"><i class="fa fa-list-ol"></i>Quản Lý Bán Hàng</a></li>
+                    <li><a href="QuanLyThemHoaDon"><i class="fa fa-cart-plus"></i>Thêm Hóa Đơn Bán Hàng</a></li>
+                    <li><a href="ThongKeDoanhSo"><i class="ion-android-list"></i>&nbsp;Thống Kê Doanh Số</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dropbox"></i>
+                    <span>Quản Lý Kho</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyNhapKho"><i class="fa fa-download"></i>Quản Lý Nhập Kho</a></li>
+                    <li><a href="QuanLyXuatKho"><i class="fa fa-upload"></i>Quản Lý Xuất Kho</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-archive"></i>
+                    <span>Quản Lý Sản Phẩm</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyDanhMuc"><i class="fa fa-list-ol"></i>Danh Mục Hàng Hóa</a></li>
+                    <li><a href="QuanLyDonViTinh"><i class="fa fa-cubes"></i>Đơn Vị Tính</a></li>
+                    <li><a href="QuanLySanPhamKho"><i class="fa fa-truck"></i>Quản Lý Sản Phẩm Kho</a></li>
+                    <li><a href="QuanLySanPham"><i class="fa fa-archive"></i>Quản Lý Sản Phẩm</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-home"></i>
+                    <span>Thiết Lập Doanh Nghiệp</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyVung"><i class="fa fa-info-circle"></i>Thông Tin Doanh Nghiệp</a></li>
+                    <li><a href="QuanLyVung"><i class="fa fa-globe"></i>Quốc Gia - Vùng</a></li>
+                    <li><a href="QuanLyChiNhanh"><i class="fa fa-university"></i>Chi Nhánh - Đại Lý</a></li>
+                    <li><a href="QuanLyKhoHang"><i class="fa fa-simplybuilt"></i>Kho Bãi</a></li>
+                    <li><a href="QuanLyNhaCungCap"><i class="fa fa-building"></i>Nhà Cung Cấp</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-area-chart"></i>
+                    <span>Thống Kê</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="ThongKeBanHang"><i class="fa fa-line-chart"></i>Thống Kê Bán Hàng</a></li>
+                    <li><a href="ThongKeTonKho"><i class="fa fa-pie-chart"></i>Thống Kê Tồn Kho</a></li>
+                    <li><a href="ThongKeKhachHang"><i class="fa fa-bar-chart"></i>Thống Kê Khách Hàng</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-cogs"></i>
+                    <span>Thiết Lập Hệ Thống</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyHeThong"><i class="fa fa-cog"></i>Chi Tiết Hệ Thống</a></li>
+                    <li><a href="QuanLyNhanVien"><i class="fa fa-user-plus"></i>Quản Lý Nhân Viên</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+
+    <!-- Side Bar For Sales Staff == sales-->
+    <section class="sidebar" ng-if="model.sessionDangNhap.phanquyen == 'sales'">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img ng-src="~/Images/AvatarNhanVien/{{model.sessionDangNhap.manhanvien}}.jpg" class="img-circle" alt="{{model.sessionDangNhap.tennhanvien}}" />
+            </div>
+            <div class="pull-left info">
+                <p>{{model.sessionDangNhap.tennhanvien}}</p>
+            </div>
+        </div>
+        <!-- search form -->
+        <form action="" method="post" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="txtKeyword" class="form-control" placeholder="Tìm kiếm..." />
+                <span class="input-group-btn">
+                    <button type='submit' name='btnSearch' id='search-btn' class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="treeview">
+                <a href="#">
+                    <i class="ion-android-cart"></i>
+                    <span>Quản Lý Bán Hàng</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyBanHang"><i class="fa fa-list-ol"></i>Quản Lý Bán Hàng</a></li>
+                    <li><a href="QuanLyThemHoaDon"><i class="fa fa-cart-plus"></i>Thêm Hóa Đơn Bán Hàng</a></li>
+                    <li><a href="ThongKeDoanhSo"><i class="ion-android-list"></i>&nbsp;Thống Kê Doanh Số</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+
+    <!-- Side Bar For Administrator == storekeepers-->
+    <section class="sidebar" ng-if="model.sessionDangNhap.phanquyen == 'storekeepers'">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img ng-src="~/Images/AvatarNhanVien/{{model.sessionDangNhap.manhanvien}}.jpg" class="img-circle" alt="{{model.sessionDangNhap.tennhanvien}}" />
+            </div>
+            <div class="pull-left info">
+                <p>{{model.sessionDangNhap.tennhanvien}}</p>
+            </div>
+        </div>
+        <!-- search form -->
+        <form action="" method="post" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="txtKeyword" class="form-control" placeholder="Tìm kiếm..." />
+                <span class="input-group-btn">
+                    <button type='submit' name='btnSearch' id='search-btn' class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dropbox"></i>
+                    <span>Quản Lý Kho</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyNhapKho"><i class="fa fa-download"></i>Quản Lý Nhập Kho</a></li>
+                    <li><a href="QuanLyXuatKho"><i class="fa fa-upload"></i>Quản Lý Xuất Kho</a></li>
+                    <li><a href="ThongKeTonKho"><i class="fa fa-pie-chart"></i>Thống Kê Tồn Kho</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-archive"></i>
+                    <span>Quản Lý Sản Phẩm</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyDanhMuc"><i class="fa fa-list-ol"></i>Danh Mục Hàng Hóa</a></li>
+                    <li><a href="QuanLyDonViTinh"><i class="fa fa-cubes"></i>Đơn Vị Tính</a></li>
+                    <li><a href="QuanLySanPhamKho"><i class="fa fa-truck"></i>Quản Lý Sản Phẩm Kho</a></li>
+                    <li><a href="QuanLySanPham"><i class="fa fa-archive"></i>Quản Lý Sản Phẩm</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+
+    <!-- Side Bar For manager == manager-->
+    <section class="sidebar" ng-if="model.sessionDangNhap.phanquyen == 'manager'">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img ng-src="~/Images/AvatarNhanVien/{{model.sessionDangNhap.manhanvien}}.jpg" class="img-circle" alt="{{model.sessionDangNhap.tennhanvien}}" />
+            </div>
+            <div class="pull-left info">
+                <p>{{model.sessionDangNhap.tennhanvien}}</p>
+            </div>
+        </div>
+        <!-- search form -->
+        <form action="" method="post" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="txtKeyword" class="form-control" placeholder="Tìm kiếm..." />
+                <span class="input-group-btn">
+                    <button type='submit' name='btnSearch' id='search-btn' class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li id="menuDashboard">
+                <a href="Dashboard">
+                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="ion-android-cart"></i>
+                    <span>Quản Lý Bán Hàng</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyBanHang"><i class="fa fa-list-ol"></i>Quản Lý Bán Hàng</a></li>
+                    <li><a href="QuanLyThemHoaDon"><i class="fa fa-cart-plus"></i>Thêm Hóa Đơn Bán Hàng</a></li>
+                    <li><a href="ThongKeDoanhSo"><i class="ion-android-list"></i>&nbsp;Thống Kê Doanh Số</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dropbox"></i>
+                    <span>Quản Lý Kho</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyNhapKho"><i class="fa fa-download"></i>Quản Lý Nhập Kho</a></li>
+                    <li><a href="QuanLyXuatKho"><i class="fa fa-upload"></i>Quản Lý Xuất Kho</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-archive"></i>
+                    <span>Quản Lý Sản Phẩm</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyDanhMuc"><i class="fa fa-list-ol"></i>Danh Mục Hàng Hóa</a></li>
+                    <li><a href="QuanLyDonViTinh"><i class="fa fa-cubes"></i>Đơn Vị Tính</a></li>
+                    <li><a href="QuanLySanPhamKho"><i class="fa fa-truck"></i>Quản Lý Sản Phẩm Kho</a></li>
+                    <li><a href="QuanLySanPham"><i class="fa fa-archive"></i>Quản Lý Sản Phẩm</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-home"></i>
+                    <span>Thiết Lập Doanh Nghiệp</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="QuanLyVung"><i class="fa fa-info-circle"></i>Thông Tin Doanh Nghiệp</a></li>
+                    <li><a href="QuanLyVung"><i class="fa fa-globe"></i>Quốc Gia - Vùng</a></li>
+                    <li><a href="QuanLyChiNhanh"><i class="fa fa-university"></i>Chi Nhánh - Đại Lý</a></li>
+                    <li><a href="QuanLyKhoHang"><i class="fa fa-simplybuilt"></i>Kho Bãi</a></li>
+                    <li><a href="QuanLyNhaCungCap"><i class="fa fa-building"></i>Nhà Cung Cấp</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-area-chart"></i>
+                    <span>Thống Kê</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="ThongKeBanHang"><i class="fa fa-line-chart"></i>Thống Kê Bán Hàng</a></li>
+                    <li><a href="ThongKeTonKho"><i class="fa fa-pie-chart"></i>Thống Kê Tồn Kho</a></li>
+                    <li><a href="ThongKeKhachHang"><i class="fa fa-bar-chart"></i>Thống Kê Khách Hàng</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+
+
+</aside>

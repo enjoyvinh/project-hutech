@@ -19,12 +19,12 @@ namespace Services.Modules
 
         private ItemStoreDAO itemStoreDAO = new ItemStoreDAO();
 
-        public List<View_DanhMucDTO> getDanhSachDanhMuc(Request_TimKiem_DanhMucDTO param)
-        {
-            List<View_DanhMucDTO> result = danhMucDAO.getDanhSachDanhMuc(param);
+        //public List<View_DanhMucDTO> getDanhSachDanhMuc(Request_TimKiem_DanhMucDTO param)
+        //{
+        //    List<View_DanhMucDTO> result = danhMucDAO.getDanhSachDanhMuc(param);
 
-            return result;
-        }
+        //    return result;
+        //}
 
         public Hashtable xoaDanhMuc(Request_Xoa_DanhMucDTO param)
         {
@@ -43,7 +43,7 @@ namespace Services.Modules
                 return result;
             }
 
-            return danhMucDAO.xoaDanhMuc(param);
+            return result;
         }
 
         public Hashtable themDanhMuc(Request_Them_DanhMucDTO param)
@@ -59,7 +59,7 @@ namespace Services.Modules
                 return result;
             }
 
-            return danhMucDAO.themDanhMuc(param); 
+            return result;
         }
     }
 }

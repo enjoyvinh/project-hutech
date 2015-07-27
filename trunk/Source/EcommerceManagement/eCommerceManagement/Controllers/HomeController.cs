@@ -9,6 +9,11 @@ namespace eCommerceManagement.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult Login()
         {
             try

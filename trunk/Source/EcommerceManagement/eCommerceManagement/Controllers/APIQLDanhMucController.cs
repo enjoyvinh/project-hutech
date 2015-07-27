@@ -26,9 +26,9 @@ namespace eCommerceManagement.Controllers
         {
             Hashtable result = new Hashtable();
 
-            List<View_DanhMucDTO> dsTheLoai = danhMucService.getDanhSachDanhMuc(param);
+            //List<View_DanhMucDTO> dsTheLoai = danhMucService.getDanhSachDanhMuc(param);
 
-            result.Add("dsDanhMuc", dsTheLoai);
+            //result.Add("dsDanhMuc", dsTheLoai);
 
             return result;
         }
