@@ -1,7 +1,11 @@
 ﻿@{
-    if (@ViewContext.RouteData.Values["controller"].ToString() == "Management")
+    if (@ViewContext.RouteData.Values["controller"].ToString() == "HeThong")
     {
-        Layout = "~/Views/Shared/__Management_Layout.cshtml";
+        Layout = "~/Views/Shared/_HeThong_Layout.cshtml";
+    }
+    if (@ViewContext.RouteData.Values["controller"].ToString() == "CuaHang")
+    {
+        Layout = "~/Views/Shared/_CuaHang_Layout.cshtml";
     }
     else
     {

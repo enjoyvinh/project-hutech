@@ -11,7 +11,7 @@ namespace Services.Modules
 {
     public interface DanhMucService
     {
-        List<View_DanhMucDTO> getDanhSachDanhMuc(Request_TimKiem_DanhMucDTO param);
+        //List<View_DanhMucDTO> getDanhSachDanhMuc(Request_TimKiem_DanhMucDTO param);
 
         Hashtable xoaDanhMuc(Request_Xoa_DanhMucDTO param);
 

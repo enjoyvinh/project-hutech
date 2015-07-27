@@ -44,30 +44,30 @@ namespace Services.Modules
                 }
                 else
                 {
-                    if (!WebSecurity.Initialized)
-                    {
-                        WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile", "UserId", "Email", autoCreateTables: true);
-                    }
+                    //if (!WebSecurity.Initialized)
+                    //{
+                    //    WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile", "UserId", "Email", autoCreateTables: true);
+                    //}
 
-                    if (WebSecurity.IsAuthenticated)
-                    {
-                        WebSecurity.Logout();
-                    }
+                    //if (WebSecurity.IsAuthenticated)
+                    //{
+                    //    WebSecurity.Logout();
+                    //}
 
-                    //WebSecurity.Login(username, password,persistCookie:false);
+                    ////WebSecurity.Login(username, password,persistCookie:false);
 
-                    if (WebSecurity.Login(username, password, persistCookie: false))
-                    {
-                        result["MaNhanVien"] = username;
-                        result["TenNhanVien"] = username;
-                        result["PhanQuyen"] = System.Web.Security.Roles.GetRolesForUser(username)[0];
+                    //if (WebSecurity.Login(username, password, persistCookie: false))
+                    //{
+                    //    result["MaNhanVien"] = username;
+                    //    result["TenNhanVien"] = username;
+                    //    result["PhanQuyen"] = System.Web.Security.Roles.GetRolesForUser(username)[0];
 
-                        result[AppConstraints.SUCCESS] = "Đăng Nhập Thành Công.";
-                    }
-                    else
-                    {
-                        result[AppConstraints.WARNING] = "Sai Tài Khoản Hoặc Mật Khẩu.";
-                    }
+                    //    result[AppConstraints.SUCCESS] = "Đăng Nhập Thành Công.";
+                    //}
+                    //else
+                    //{
+                    //    result[AppConstraints.WARNING] = "Sai Tài Khoản Hoặc Mật Khẩu.";
+                    //}
                 }
                 return result;
             }

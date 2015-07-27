@@ -24,6 +24,12 @@ namespace eCommerceManagement
             bundles.Add(new ScriptBundle("~/bundles/hethongmenujs").Include(
                         "~/Scripts/quanly/QuanLyMenu.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/cuahangheaderjs").Include(
+                        "~/Scripts/quanly/QuanLyHeader.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/cuahangmenujs").Include(
+                        "~/Scripts/quanly/QuanLyMenu.js"));
+
 
             bundles.Add(new ScriptBundle("~/bundles/quanlytheloaijs").Include(
                         "~/Scripts/quanly/QuanLyTheLoai.js"));
