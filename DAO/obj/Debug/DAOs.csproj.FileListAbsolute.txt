@@ -18,3 +18,15 @@ C:\Users\Vinh\Desktop\seminar\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\De
 C:\Users\Vinh\Desktop\seminar\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
 C:\Users\Vinh\Desktop\seminar\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Debug\EntityFramework.xml
 C:\Users\Vinh\Desktop\seminar\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Debug\EntityFramework.SqlServer.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\DAOs.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\DAOs.pdb
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\EntityFramework.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\EntityFramework.SqlServer.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\EntityFramework.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\EntityFramework.SqlServer.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\obj\Debug\DAOs.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\obj\Debug\DAOs.pdb
