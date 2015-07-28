@@ -2907,12 +2907,13 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\cuahang\" />
-    <Folder Include="Content\website\" />
+    <Folder Include="Content\home\" />
+    <Folder Include="Images\ChuyenMuc\" />
     <Folder Include="Images\CuaHang\UtChuotStore\AnhBanTin\" />
     <Folder Include="Images\CuaHang\UtChuotStore\AnhSanPham\" />
     <Folder Include="Scripts\common\angular-1.4.0-rc\i18n\ngLocale\" />
     <Folder Include="Scripts\cuahang\" />
-    <Folder Include="Scripts\website\" />
+    <Folder Include="Scripts\home\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
