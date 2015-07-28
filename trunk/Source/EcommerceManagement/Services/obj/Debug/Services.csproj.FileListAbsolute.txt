@@ -26,3 +26,23 @@ C:\Users\Vinh\Desktop\SaleManagement\Services\bin\Debug\DAOs.pdb
 C:\Users\Vinh\Desktop\SaleManagement\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\Vinh\Desktop\SaleManagement\Services\obj\Debug\Servies.dll
 C:\Users\Vinh\Desktop\SaleManagement\Services\obj\Debug\Servies.pdb
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\Services.dll.config
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\Services.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\Services.pdb
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\DAOs.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\EntityFramework.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\WebMatrix.Data.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\WebMatrix.WebData.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\DAOs.pdb
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\EntityFramework.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\WebMatrix.Data.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Debug\WebMatrix.WebData.xml
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\obj\Debug\Services.dll
+D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\obj\Debug\Services.pdb
