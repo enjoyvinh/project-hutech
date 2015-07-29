@@ -61,7 +61,7 @@ namespace DAOs
         {
             transaction.Rollback();
             conn.Close();
-            throw new Exception();
+            //throw new Exception();
         }
 
         /// <method>

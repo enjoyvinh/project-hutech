@@ -40,7 +40,7 @@ QuanLyHeaderModule.controller('QuanLyHeaderCtrl', function ($timeout, $scope, $r
 
     $scope.doLogout = function () {
         $rootScope.$broadcast('doPost', {
-            action: 'api/APIDangNhap/doLogout',
+            action: 'api/API_HeThong_DangNhap/doLogout',
             param:{},
             callback: function (result) {
                 if (result.url != undefined) {

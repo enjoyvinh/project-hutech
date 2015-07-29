@@ -30,3 +30,16 @@ D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\Mi
 D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\obj\Debug\DAOs.dll
 D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\DAO\obj\Debug\DAOs.pdb
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\DAOs.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\DAOs.pdb
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\EntityFramework.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\EntityFramework.SqlServer.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\EntityFramework.xml
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\EntityFramework.SqlServer.xml
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Doantotnghiep\Doantotnghiep\DAO\obj\Debug\DAOs.csprojResolveAssemblyReference.cache
+E:\Doantotnghiep\Doantotnghiep\DAO\obj\Debug\DAOs.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\obj\Debug\DAOs.pdb

@@ -282,7 +282,11 @@ commonModule.controller('commonCtrl', function ($scope, $rootScope, $http, $wind
 
             var callbackEndDate = new Date();
             console.log('[CALLBACK END  ] ' + $filter('date')(callbackEndDate, 'yyyy-MM-dd HH:mm:ss.sss') + ': ' + config.url + ' [' + (callbackEndDate - callbackStartDate) + 'ms]');
-            $rootScope.setLoading(false);
+
+            //setTimeout(function () {
+                $rootScope.setLoading(false);
+            //}, 1500);
+            
         }).error(function (data) {
 
             // パラメーターをスコープオブジェクトから削除する。
@@ -290,7 +294,9 @@ commonModule.controller('commonCtrl', function ($scope, $rootScope, $http, $wind
 
             // HTTPステータスコードが4xx、5xxの場合、エラー画面に遷移する。
             //$window.location = getContextPath() + '/error';
-            $rootScope.setLoading(false);
+            //setTimeout(function () {
+                $rootScope.setLoading(false);
+            //}, 1500);
             //$rootScope.showBlockAlert(data);
         });
 

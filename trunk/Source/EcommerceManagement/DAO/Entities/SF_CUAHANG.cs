@@ -27,5 +27,6 @@ namespace DAOs.Entities
         public String TAIKHOANCUAHANG { get; set; }
         public String MATKHAUCUAHANG { get; set; }
         public Int16 TRANGTHAI { get; set; }
+        public DateTime NGAYTAO { get; set; }
     }
 }

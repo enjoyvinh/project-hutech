@@ -205,11 +205,12 @@
     <Compile Include="Controllers\APIQLNhanVienController.cs" />
     <Compile Include="Controllers\APIQLTheLoaiController.cs" />
     <Compile Include="Controllers\APIQLBanTinController.cs" />
+    <Compile Include="Controllers\API_HeThong_DashboardController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\CuaHangController.cs" />
     <Compile Include="Controllers\HeThongController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\APIDangNhapController.cs" />
+    <Compile Include="Controllers\API_HeThong_DangNhapController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2916,6 +2917,7 @@
     <Content Include="Views\Shared\_CuaHang_Footer.cshtml" />
     <Content Include="Views\Shared\_CuaHang_Header.cshtml" />
     <Content Include="Views\Shared\_CuaHang_Menu.cshtml" />
+    <Content Include="Views\HeThong\Dashboard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

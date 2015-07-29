@@ -80,11 +80,11 @@ paragonApp.directive('loading', function(){
 //    '  <i class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></i></div> \n' +
 //    ' </div>'
     template: '<div id="bg-loading" ng-show="isLoading"></div> \n' +
-        ' <div ng-show="isLoading" style="position: fixed; left: 50%; top: 35%; font-size: 20px; width: 400px; margin-left: -200px;z-index:99999; background-color:transparent;"> \n'+
-        '  <div class="alert alert-info"> \n'+
+        ' <div ng-show="isLoading" style="position: fixed; left: 50%; top: 35%; font-size: 20px; width:300px; margin-left: -200px;z-index:999999; background-color:transparent;-moz-box-shadow: 6px 7px 40px #635f5f;"> \n' +
+        ' <div class="alert alert-info"> \n'+
         //'  <i class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></i>Đang tải dữ liệu...</div> \n' +
-        '  <i class="fa fa-refresh fa-spin"></i>&nbsp;Đang tải dữ liệu...</div> \n' +
-        ' </div>'
+        ' <i class="fa fa-refresh fa-spin"></i>&nbsp;Đang tải dữ liệu...</div> \n' +
+        ' <div style="position:fixed;top:0;left:0;float:left;z-index:-1 !important; background-color:#000000;width:100%;height:100%;opacity: 0.25;filter: alpha(opacity=25);"></div></div>'
   };
 });
 
