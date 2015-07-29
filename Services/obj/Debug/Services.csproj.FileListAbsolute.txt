@@ -46,3 +46,23 @@ D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Deb
 D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\obj\Debug\Services.dll
 D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\obj\Debug\Services.pdb
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Services.dll.config
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Services.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Services.pdb
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\DAOs.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\EntityFramework.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\EntityFramework.SqlServer.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\WebMatrix.Data.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\WebMatrix.WebData.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\DAOs.pdb
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\EntityFramework.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\EntityFramework.SqlServer.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\WebMatrix.Data.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\WebMatrix.WebData.xml
+E:\Doantotnghiep\Doantotnghiep\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+E:\Doantotnghiep\Doantotnghiep\Services\obj\Debug\Services.dll
+E:\Doantotnghiep\Doantotnghiep\Services\obj\Debug\Services.pdb

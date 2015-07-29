@@ -80,6 +80,12 @@
     <Compile Include="Common\DBConnection.cs" />
     <Compile Include="Common\globalApp.cs" />
     <Compile Include="DAO\BanTinDAO.cs" />
+    <Compile Include="DAO\SF_HoaDonDAO.cs" />
+    <Compile Include="DAO\SF_DanhGiaSanPhamDAO.cs" />
+    <Compile Include="DAO\SF_KhachHangDAO.cs" />
+    <Compile Include="DAO\SF_BinhLuanDAO.cs" />
+    <Compile Include="DAO\SF_SanPhamDAO.cs" />
+    <Compile Include="DAO\SF_CuaHangDAO.cs" />
     <Compile Include="DAO\NhanVienQuanTriDAO.cs" />
     <Compile Include="DAO\DanhMucDAO.cs" />
     <Compile Include="DAO\ItemSaleDAO.cs" />

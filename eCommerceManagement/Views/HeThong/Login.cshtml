@@ -2,13 +2,12 @@
     Page.Title = "Đăng Nhập Hệ Thống Quản Lý";
 }
 
-@Scripts.Render("~/bundles/quanlydanhmucjs")
 @Scripts.Render("~/bundles/quanlydangnhapjs")
 
 <script src="~/Scripts/common/webcam.min.js"></script>
 <div class="login-box" ng-app="QuanLyDangNhapModule" ng-controller="commonCtrl" ng-cloak>
       <div class="login-logo" >
-        <b>@Html.ActionLink("HỆ THỐNG QUẢN LÝ", "Index", "Home")</b>
+        <b>@Html.ActionLink("HỆ THỐNG QUẢN LÝ SÀN GIAO DỊCH", "Index", "Home")</b>
       </div><!-- /.login-logo -->
       <div class="login-box-body" ng-controller="QuanLyDangNhapControl" ng-init="" click-event-listener ng-cloak>
         <p class="login-box-msg">Đăng Nhập Dashboard Skyfire</p>
@@ -38,12 +37,12 @@
 
             <div class="form-group has-feedback">
               <button type="submit" class="btn btn-primary btn-block btn-flat"
-              	ng-click="doLogin(model.form.dangnhap)">Sign In</button>
+              	ng-click="doLogin(model.form.dangnhap)">Đăng Nhập</button>
             </div><!-- /.col -->
           </div>
         </form>
 
-        <a href="#">Quên Mật Khẩu?</a>
+        @*<a href="#">Quên Mật Khẩu?</a>*@
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

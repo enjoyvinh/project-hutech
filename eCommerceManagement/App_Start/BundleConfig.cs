@@ -8,53 +8,9 @@ namespace eCommerceManagement
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
-            /*Module Chức Năng*/
-            bundles.Add(new ScriptBundle("~/bundles/dashboard").Include(
-                        "~/Scripts/common/AdminLTE/dashboard2.js"
-                        , "~/Scripts/common/AdminLTE/demo.js"
-                        , "~/Scripts/quanly/QuanLyTrangChu.js"));
-            bundles.Add(new ScriptBundle("~/bundles/quanlydangnhapjs").Include(
-                        "~/Scripts/quanly/QuanLyDangNhap.js"));
-            /*Module Chức Năng*/
-
-
-            bundles.Add(new ScriptBundle("~/bundles/hethongheaderjs").Include(
-                        "~/Scripts/quanly/QuanLyHeader.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/hethongmenujs").Include(
-                        "~/Scripts/quanly/QuanLyMenu.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/cuahangheaderjs").Include(
-                        "~/Scripts/quanly/QuanLyHeader.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/cuahangmenujs").Include(
-                        "~/Scripts/quanly/QuanLyMenu.js"));
-
-
-            bundles.Add(new ScriptBundle("~/bundles/quanlytheloaijs").Include(
-                        "~/Scripts/quanly/QuanLyTheLoai.js"));
-            bundles.Add(new ScriptBundle("~/bundles/quanlythemtheloaijs").Include(
-                        "~/Scripts/quanly/QuanLyThemTheLoai.js"));
-            bundles.Add(new ScriptBundle("~/bundles/quanlycapnhattheloaijs").Include(
-                        "~/Scripts/quanly/QuanLyCapNhatTheLoai.js"));
-            bundles.Add(new ScriptBundle("~/bundles/quanlybantinjs").Include(
-                        "~/Scripts/quanly/QuanLyBanTin.js"));
-            bundles.Add(new ScriptBundle("~/bundles/quanlythembantinjs").Include(
-                        "~/Scripts/quanly/QuanLyThemBanTin.js"));
-            bundles.Add(new ScriptBundle("~/bundles/quanlycapnhatbantinjs").Include(
-                        "~/Scripts/quanly/QuanLyCapNhatBanTin.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/quanlydanhmucjs").Include(
-                        "~/Scripts/quanly/QuanLyDanhMuc.js"));
-            bundles.Add(new ScriptBundle("~/bundles/quanlythemdanhmucjs").Include(
-                        "~/Scripts/quanly/QuanLyThemDanhMuc.js"));
-            bundles.Add(new ScriptBundle("~/bundles/quanlynhanvienjs").Include(
-                        "~/Scripts/quanly/QuanLyNhanVien.js"));
-
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
+            //Javascript dùng chung cho hệ thống
             bundles.Add(new ScriptBundle("~/bundles/hethongjs").Include(
-                //"~/Scripts/quanly/common/jquery-1.11.2.js"
+                    //"~/Scripts/quanly/common/jquery-1.11.2.js"
                     "~/Scripts/common/jquery-2.1.3.js"
                     , "~/Scripts/common/bootstrap.js"
                     , "~/Content/common/plugins/morris/morris.js"
@@ -115,10 +71,81 @@ namespace eCommerceManagement
                     , "~/Scripts/common/plugins/nguploadfile/ng-file-upload.js"
                     , "~/Scripts/common/plugins/nguploadfile/upload.js"
                     , "~/Scripts/common/angular-ui-tree.js"
-                    
-                    
                     //, "~/Scripts/common/chosen.proto.js"
             ));
+
+            //TODO: Module Chức Năng 
+            bundles.Add(new ScriptBundle("~/bundles/quanlydangnhapjs").Include(
+                        "~/Scripts/hethong/QuanLyDangNhap.js"));
+
+
+            bundles.Add(new ScriptBundle("~/bundles/dashboard").Include(
+                        "~/Scripts/common/AdminLTE/dashboard2.js"
+                        , "~/Scripts/common/AdminLTE/demo.js"
+                        , "~/Scripts/hethong/QuanLyTrangChu.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/hethongheaderjs").Include(
+                        "~/Scripts/hethong/QuanLyHeader.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/hethongmenujs").Include(
+                        "~/Scripts/hethong/QuanLyMenu.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/cuahangheaderjs").Include(
+                        "~/Scripts/cuahang/QuanLyHeader.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/cuahangmenujs").Include(
+                        "~/Scripts/cuahang/QuanLyMenu.js"));
+
+
+            bundles.Add(new ScriptBundle("~/bundles/quanlytheloaijs").Include(
+                        "~/Scripts/quanly/QuanLyTheLoai.js"));
+            bundles.Add(new ScriptBundle("~/bundles/quanlythemtheloaijs").Include(
+                        "~/Scripts/quanly/QuanLyThemTheLoai.js"));
+            bundles.Add(new ScriptBundle("~/bundles/quanlycapnhattheloaijs").Include(
+                        "~/Scripts/quanly/QuanLyCapNhatTheLoai.js"));
+            bundles.Add(new ScriptBundle("~/bundles/quanlybantinjs").Include(
+                        "~/Scripts/quanly/QuanLyBanTin.js"));
+            bundles.Add(new ScriptBundle("~/bundles/quanlythembantinjs").Include(
+                        "~/Scripts/quanly/QuanLyThemBanTin.js"));
+            bundles.Add(new ScriptBundle("~/bundles/quanlycapnhatbantinjs").Include(
+                        "~/Scripts/quanly/QuanLyCapNhatBanTin.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/quanlydanhmucjs").Include(
+                        "~/Scripts/quanly/QuanLyDanhMuc.js"));
+            bundles.Add(new ScriptBundle("~/bundles/quanlythemdanhmucjs").Include(
+                        "~/Scripts/quanly/QuanLyThemDanhMuc.js"));
+            bundles.Add(new ScriptBundle("~/bundles/quanlynhanvienjs").Include(
+                        "~/Scripts/quanly/QuanLyNhanVien.js"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                     "~/Content/hethong/bootstrap.css"

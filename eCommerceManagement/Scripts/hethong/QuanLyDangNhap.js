@@ -26,22 +26,22 @@ quanLyDangNhapModule.controller('QuanLyDangNhapControl', function ($rootScope, $
 
     $scope.loading = true;
 
-    $scope.myChannel = {
+    //$scope.myChannel = {
         // the fields below are all optional
         //videoHeight: 800,
         //videoWidth: 600,
-        video: null // Will reference the video element on success
-    };
+        //video: null // Will reference the video element on success
+    //};
 
-    $scope.onError = function (err) { };
-    $scope.onStream = function (stream) { };
-    $scope.onSuccess = function () { };
+    //$scope.onError = function (err) { };
+    //$scope.onStream = function (stream) { };
+    //$scope.onSuccess = function () { };
 
-    $scope.init = function () {
+    //$scope.init = function () {
 
-    };
+    //};
 
-    $scope.init();
+    //$scope.init();
 
     $scope.reset = function () {
         $scope.$broadcast('show-errors-reset');
@@ -60,7 +60,7 @@ quanLyDangNhapModule.controller('QuanLyDangNhapControl', function ($rootScope, $
         if ($scope.dangnhapForm.$valid) {
 
             $rootScope.$broadcast('doPost', {
-                action: 'api/APIDangNhap/doLogin',
+                action: 'api/API_HeThong_DangNhap/doLogin',
                 params: param,
                 callback: function (result) {
 
@@ -70,7 +70,7 @@ quanLyDangNhapModule.controller('QuanLyDangNhapControl', function ($rootScope, $
                         sessionStorage.setItem("TenNhanVien", result.TenNhanVien);
                         sessionStorage.setItem("PhanQuyen", result.PhanQuyen);
                         sessionStorage.setItem("ThoiGianDangNhap", $.now());
-                        $window.location = 'Dashboard';
+                        $window.location = '/HeThong/Dashboard';
                     } else {
                         if (!ValidateUtil.isValidTextEmpty(result.WARNING)) {
                             dialogs.errorWarning("Cảnh Báo", result.CanhBao, { size: 'md' });

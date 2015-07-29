@@ -76,6 +76,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\DashboardService.cs" />
     <Compile Include="Modules\DanhMucService.cs" />
     <Compile Include="Modules\DanhMucServiceImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

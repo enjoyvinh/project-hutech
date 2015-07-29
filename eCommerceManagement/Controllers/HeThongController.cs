@@ -14,7 +14,7 @@ namespace eCommerceManagement.Controllers
             return View();
         }
 
-        public ActionResult QuanLyThemDanhMuc()
+        public ActionResult Dashboard()
         {
             return View();
         }
