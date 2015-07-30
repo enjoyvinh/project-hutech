@@ -11,15 +11,15 @@ namespace eCommerceManagement
             //Javascript dùng chung cho hệ thống
             bundles.Add(new ScriptBundle("~/bundles/hethongjs").Include(
                     //"~/Scripts/quanly/common/jquery-1.11.2.js"
-                    "~/Scripts/common/jquery-2.1.3.js"
+                    "~/Scripts/common/jquery-2.1.4.js"
                     , "~/Scripts/common/bootstrap.js"
                     , "~/Content/common/plugins/morris/morris.js"
                     , "~/Scripts/common/jquery.filter_input.js"
-                    , "~/Scripts/common/angular-1.4.0-rc/angular.js"
-                    , "~/Scripts/common/angular-1.4.0-rc/angular-sanitize.js"
+                    , "~/Scripts/common/angular-1.4.3/angular.js"
+                    , "~/Scripts/common/angular-1.4.3/angular-sanitize.js"
                     , "~/Scripts/common/angular-translate.js"
                     , "~/Scripts/common/moment.js"
-                    , "~/Scripts/common/ui-bootstrap-tpls-0.13.0.js"
+                    , "~/Scripts/common/ui-bootstrap-tpls-0.13.1.js"
                     , "~/Scripts/common/autoNumeric.js"
                     , "~/Scripts/common/chosen.jquery.js"
                     , "~/Scripts/common/chosen.js"
@@ -98,24 +98,24 @@ namespace eCommerceManagement
 
 
             bundles.Add(new ScriptBundle("~/bundles/quanlytheloaijs").Include(
-                        "~/Scripts/quanly/QuanLyTheLoai.js"));
+                        "~/Scripts/hethong/QuanLyTheLoai.js"));
             bundles.Add(new ScriptBundle("~/bundles/quanlythemtheloaijs").Include(
-                        "~/Scripts/quanly/QuanLyThemTheLoai.js"));
+                        "~/Scripts/hethong/QuanLyThemTheLoai.js"));
             bundles.Add(new ScriptBundle("~/bundles/quanlycapnhattheloaijs").Include(
-                        "~/Scripts/quanly/QuanLyCapNhatTheLoai.js"));
+                        "~/Scripts/hethong/QuanLyCapNhatTheLoai.js"));
             bundles.Add(new ScriptBundle("~/bundles/quanlybantinjs").Include(
-                        "~/Scripts/quanly/QuanLyBanTin.js"));
+                        "~/Scripts/hethong/QuanLyBanTin.js"));
             bundles.Add(new ScriptBundle("~/bundles/quanlythembantinjs").Include(
-                        "~/Scripts/quanly/QuanLyThemBanTin.js"));
+                        "~/Scripts/hethong/QuanLyThemBanTin.js"));
             bundles.Add(new ScriptBundle("~/bundles/quanlycapnhatbantinjs").Include(
-                        "~/Scripts/quanly/QuanLyCapNhatBanTin.js"));
+                        "~/Scripts/hethong/QuanLyCapNhatBanTin.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/quanlydanhmucjs").Include(
-                        "~/Scripts/quanly/QuanLyDanhMuc.js"));
+                        "~/Scripts/hethong/QuanLyDanhMuc.js"));
             bundles.Add(new ScriptBundle("~/bundles/quanlythemdanhmucjs").Include(
-                        "~/Scripts/quanly/QuanLyThemDanhMuc.js"));
+                        "~/Scripts/hethong/QuanLyThemDanhMuc.js"));
             bundles.Add(new ScriptBundle("~/bundles/quanlynhanvienjs").Include(
-                        "~/Scripts/quanly/QuanLyNhanVien.js"));
+                        "~/Scripts/hethong/QuanLyNhanVien.js"));
 
 
 
