@@ -88,8 +88,10 @@ QuanLyTrangChuModule.controller('QuanLyTrangChuControl', function ($rootScope,
     $scope.salesChartData = {};
 
     $scope.doThongKe = function () {
+        
 
         $rootScope.$broadcast('doPost', {
+
             action: 'api/API_HeThong_Dashboard/doDashboard',
             params: {},
             callback: function (result) {
@@ -128,9 +130,8 @@ QuanLyTrangChuModule.controller('QuanLyTrangChuControl', function ($rootScope,
                     };
 
                 } else {
-                    $window.location = '/HeThong/Login';
-                }
-                $rootScope.setLoading(false);
+                    $window.location = '/Error/ServerError';
+                }            
             }
         });
     };

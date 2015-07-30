@@ -4,7 +4,7 @@
         //Response.Redirect("~/Home/Login");
     //}
 
-    Page.Title = "Dashboard Skyfire Team";
+    Page.Title = "Dashboard Skyfire Team - Hệ Thống Website Ứng Dụng Quản Lý Sàn Thương Mại Điện Tử";
 }
 
 @Scripts.Render("~/bundles/dashboard")
@@ -17,7 +17,7 @@
 @Html.Partial("~/Views/Shared/_HeThong_Header.cshtml")
 
 @Html.Partial("~/Views/Shared/_HeThong_Menu.cshtml")
-<loading></loading>
+      <loading></loading>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper" ng-controller='QuanLyTrangChuControl' ng-init='' click-event-listener ng-cloak>
         <!-- Content Header (Page header) -->
@@ -27,8 +27,8 @@
             <small>Skyfire Team</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
           </ol>
         </section>
 
@@ -48,7 +48,7 @@
             </div><!-- /.col -->
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
-                   <span class="info-box-icon bg-red"><i class="fa fa-dropbox"></i></span>
+                   <span class="info-box-icon bg-red"><i class="fa fa-cubes"></i></span>
                 <div class="info-box-content">
                   <span class="info-box-text">Số Sản Phẩm</span>
                   <span class="info-box-number">{{model.form.thongkehethong.tongsanpham | number}}</span>
@@ -63,7 +63,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
                
-                  <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+                  <span class="info-box-icon bg-yellow"><i class="fa fa-users"></i></span>
                 <div class="info-box-content">
                   <span class="info-box-text">Số Khách Hàng</span>
                   <span class="info-box-number">{{model.form.thongkehethong.tongkhachhang | number}}</span>
@@ -73,7 +73,7 @@
             </div><!-- /.col -->
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
-                  <span class="info-box-icon bg-green"><i class="fa fa-comment"></i></span>
+                  <span class="info-box-icon bg-green"><i class="fa fa-comments"></i></span>
                 <div class="info-box-content">
                   <span class="info-box-text">Luợt Phản Hồi</span>
                   <span class="info-box-number">{{model.form.thongkehethong.tongluotdanhgiabinhluan | number}}</span>
@@ -87,7 +87,7 @@
             <div class="col-md-12">
               <div class="box">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Báo Cáo Tóm Tắt Năm @DateTime.Now.Year</h3>
+                  <h3 class="box-title"><i class="fa fa-line-chart"></i> Báo Cáo Tóm Tắt Năm @DateTime.Now.Year</h3>
                   <div class="box-tools pull-right">
                     <button class="btn btn-box-tool" ng-click="doThongKe()">
                         <i class="fa fa-refresh"></i></button>
@@ -208,7 +208,7 @@
               <!-- TABLE: LATEST ORDERS -->
               <div class="box box-info">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Lượt Đặt Hàng Giá Trị Cao Nhất</h3>
+                  <h3 class="box-title"><i class="fa fa-bar-chart"></i> Lượt Đặt Hàng Giá Trị Cao Nhất</h3>
                   <div class="box-tools pull-right">
                     <button class="btn btn-box-tool"><i class="fa fa-refresh"></i></button>
                     <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
@@ -325,7 +325,7 @@
               <!-- PRODUCT LIST -->
               <div class="box box-primary">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Sản Phẩm Mới Nhất</h3>
+                  <h3 class="box-title"><i class="fa fa-archive"></i> Sản Phẩm Mới Nhất</h3>
                   <div class="box-tools pull-right">
                     <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                     <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
