@@ -1,9 +1,5 @@
 ﻿@{
-    if (!WebSecurity.IsAuthenticated)
-    {
-        Response.Redirect("~/Home/Login");
-    }
-    
+
     Page.Title = "Quản Lý Danh Mục - Dashboard Skyfire Team";
 }
 @Scripts.Render("~/bundles/dashboard")
