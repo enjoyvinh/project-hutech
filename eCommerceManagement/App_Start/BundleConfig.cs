@@ -148,9 +148,9 @@ namespace eCommerceManagement
 
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                    "~/Content/hethong/bootstrap.css"
+                    "~/Content/hethong/bootstrap.min.css"
                     , "~/Content/hethong/checkbox.css"
-                    , "~/Content/hethong/font-awesome.css"
+                    , "~/Content/hethong/font-awesome.min.css"
                     , "~/Content/hethong/skyfire-bootstrap.css"
                     , "~/Content/quanly/AdminLTE.css"
                     , "~/Content/quanly/skins/_all-skins.css"
@@ -158,7 +158,7 @@ namespace eCommerceManagement
                     , "~/Content/hethong/widths.css"
                     , "~/Content/hethong/chosen.css"
                     , "~/Content/hethong/chosen-spinner.css"
-                    , "~/Content/hethong/bootstrap-switch.css"
+                    , "~/Content/hethong/bootstrap-switch.min.css"
                     , "~/Scripts/quanly/common/jquery-ui-1.11.4/jquery-ui.css"
                     , "~/Scripts/quanly/common/jquery-ui-1.11.4/jquery-ui.structure.css"
                     , "~/Scripts/quanly/common/jquery-ui-1.11.4/jquery-ui.theme.css"
@@ -169,7 +169,7 @@ namespace eCommerceManagement
                     , "~/Content/quanly/colorpicker/bootstrap-colorpicker.css"
                     , "~/Content/quanly/datatables/dataTables.bootstrap.css"
                     , "~/Content/quanly/datepicker/datepicker3.css"
-                    , "~/Content/quanly/fullcalendar/fullcalendar.css"
+                    , "~/Content/quanly/fullcalendar/fullcalendar.min.css"
                     , "~/Content/quanly/ionslider/ion.rangeSlider.css"
                     , "~/Content/quanly/jvectormap/jquery-jvectormap-1.2.2.css"
                     , "~/Content/quanly/morris/morris.css"
@@ -183,11 +183,6 @@ namespace eCommerceManagement
                     , "~/Content/hethong/ionicons-2.0.1/css/ionicons.css"
             ));
 
-            bundles.Add(new StyleBundle("~/TinTuc/css").Include(
-                    "~/Content/tintuc/style.css"
-                    , "~/Content/tintuc/function2.css"
-                    , "~/Content/tintuc/custom.css"
-            ));
         }
     }
 }

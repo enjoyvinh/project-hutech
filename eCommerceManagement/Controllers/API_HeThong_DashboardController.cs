@@ -42,8 +42,8 @@ namespace eCommerceManagement.Controllers
                 chartGiaoDichThatBai[i] = value;
             }
 
-            result.Add("chartGiaoDichThangCong", "550,440,600,800,700,1080,1900,2100,5000,300,3000,800");
-            result.Add("chartGiaoDichThatBai", "200,600,900,300,3000,2000,1500,1700,3000,80,440,1800");
+            result.Add("chartGiaoDichThangCong", "550,440,600,800,700,1080,1900,2100");
+            result.Add("chartGiaoDichThatBai", "200,600,900,300,3000,2000,1500,1700");
 
             return result;
         }
