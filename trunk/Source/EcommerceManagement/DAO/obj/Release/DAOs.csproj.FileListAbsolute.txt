@@ -7,3 +7,16 @@ C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Release\En
 C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\obj\Release\DAOs.dll
 C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\DAO\obj\Release\DAOs.pdb
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\DAOs.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\DAOs.pdb
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\EntityFramework.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\EntityFramework.SqlServer.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\Microsoft.AspNet.Identity.Core.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\EntityFramework.xml
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\EntityFramework.SqlServer.xml
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\Microsoft.AspNet.Identity.Core.xml
+E:\Doantotnghiep\Doantotnghiep\DAO\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Doantotnghiep\Doantotnghiep\DAO\obj\Release\DAOs.csprojResolveAssemblyReference.cache
+E:\Doantotnghiep\Doantotnghiep\DAO\obj\Release\DAOs.dll
+E:\Doantotnghiep\Doantotnghiep\DAO\obj\Release\DAOs.pdb
