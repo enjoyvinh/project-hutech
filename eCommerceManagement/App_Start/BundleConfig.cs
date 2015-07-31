@@ -164,7 +164,7 @@ namespace eCommerceManagement
                     , "~/Scripts/quanly/common/jquery-ui-1.11.4/jquery-ui.theme.css"
                     , "~/Content/quanly/iCheck/all.css"
                     , "~/Content/quanly/iCheck/square/_all.css"
-                    , "~/Content/quanly/bootstrap-wysihtml5/bootstrap3-wysihtml5.css"
+                    //, "~/Content/quanly/bootstrap-wysihtml5/bootstrap3-wysihtml5.css"
                     , "~/Content/quanly/bootstrap-slider/slider.css"
                     , "~/Content/quanly/colorpicker/bootstrap-colorpicker.css"
                     , "~/Content/quanly/datatables/dataTables.bootstrap.css"

@@ -12,8 +12,8 @@ quanLyDangNhapModule.factory('QuanLyDangNhapModel', ['BaseModel', '$rootScope', 
 
     model.form = {
         dangnhap: {
-            manhanvien: "manager@skyfire.vn",
-            matkhau: "123@abc",
+            manhanvien: "",
+            matkhau: "",
         },
     };
 
