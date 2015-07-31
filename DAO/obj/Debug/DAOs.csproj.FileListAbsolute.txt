@@ -43,3 +43,16 @@ E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFra
 E:\Doantotnghiep\Doantotnghiep\DAO\obj\Debug\DAOs.csprojResolveAssemblyReference.cache
 E:\Doantotnghiep\Doantotnghiep\DAO\obj\Debug\DAOs.dll
 E:\Doantotnghiep\Doantotnghiep\DAO\obj\Debug\DAOs.pdb
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\DAOs.dll
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\DAOs.pdb
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\EntityFramework.dll
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\EntityFramework.SqlServer.dll
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\EntityFramework.xml
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\EntityFramework.SqlServer.xml
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\eCommerceManagement\eCommerceManagement\DAO\obj\Debug\DAOs.csprojResolveAssemblyReference.cache
+D:\eCommerceManagement\eCommerceManagement\DAO\obj\Debug\DAOs.dll
+D:\eCommerceManagement\eCommerceManagement\DAO\obj\Debug\DAOs.pdb

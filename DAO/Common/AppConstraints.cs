@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-/*
+﻿/*
  *  
  *  Filename:   AppConstraints.cs
  *  Author:     Vinh Nguyễn - 1216061133
