@@ -5,3 +5,23 @@ C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\bin\Relea
 C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
 C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\obj\Release\Servies.dll
 C:\Users\Vinh\Desktop\Bao Cao Chuyen De 2\Demo\SaleManagement\Services\obj\Release\Servies.pdb
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\Services.dll.config
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\Services.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\Services.pdb
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\DAOs.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\EntityFramework.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\EntityFramework.SqlServer.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\Microsoft.AspNet.Identity.Core.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\WebMatrix.Data.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\WebMatrix.WebData.dll
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\DAOs.pdb
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\EntityFramework.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\EntityFramework.SqlServer.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\Microsoft.AspNet.Identity.Core.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\WebMatrix.Data.xml
+E:\Doantotnghiep\Doantotnghiep\Services\bin\Release\WebMatrix.WebData.xml
+E:\Doantotnghiep\Doantotnghiep\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
+E:\Doantotnghiep\Doantotnghiep\Services\obj\Release\Services.dll
+E:\Doantotnghiep\Doantotnghiep\Services\obj\Release\Services.pdb

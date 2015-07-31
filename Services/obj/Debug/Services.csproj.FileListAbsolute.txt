@@ -46,7 +46,6 @@ D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\bin\Deb
 D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\obj\Debug\Services.dll
 D:\BAI HOC\BaiHocHutech\LuanVan\SVNShareCode\SVNThuongMaiDienTu\Services\obj\Debug\Services.pdb
-E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Services.dll.config
 E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Services.dll
 E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\Services.pdb
 E:\Doantotnghiep\Doantotnghiep\Services\bin\Debug\DAOs.dll
