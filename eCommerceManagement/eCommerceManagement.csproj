@@ -2250,6 +2250,23 @@
     <Content Include="Scripts\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scripts\fonts\ionicons.svg" />
     <Content Include="Scripts\hethong\QuanLyCapNhatBanTin.js" />
+    <Content Include="Scripts\hethong\QuanLyChuyenMuc.js" />
+    <Content Include="Scripts\hethong\QuanLyDonViTinh.js" />
+    <Content Include="Scripts\hethong\QuanLyGiaTriThuocTinh.js" />
+    <Content Include="Scripts\hethong\QuanLyHinhAnh.js" />
+    <Content Include="Scripts\hethong\QuanLyKhoanCach.js" />
+    <Content Include="Scripts\hethong\QuanLyPhanQuyen.js" />
+    <Content Include="Scripts\hethong\QuanLyQuanHuyen.js" />
+    <Content Include="Scripts\hethong\QuanLyThuocTinh.js" />
+    <Content Include="Scripts\hethong\QuanLyTinhThanhPho.js" />
+    <Content Include="Scripts\hethong\QuanLyVanChuyen.js" />
+    <Content Include="Scripts\hethong\ThongKeBinhLuan.js" />
+    <Content Include="Scripts\hethong\ThongKeCuaHang.js" />
+    <Content Include="Scripts\hethong\ThongKeGiamGia.js" />
+    <Content Include="Scripts\hethong\ThongKeGiaoDich.js" />
+    <Content Include="Scripts\hethong\ThongKeKhachHang.js" />
+    <Content Include="Scripts\hethong\ThongKeSanPham.js" />
+    <Content Include="Scripts\hethong\QuanLyQuenMatKhau.js" />
     <Content Include="Scripts\hethong\QuanLyDanhMuc.js" />
     <Content Include="Scripts\hethong\QuanLyNhanVien.js" />
     <Content Include="Scripts\hethong\QuanLyThemBanTin.js" />
@@ -2260,6 +2277,7 @@
     <Content Include="Scripts\hethong\QuanLyHeader.js" />
     <Content Include="Scripts\hethong\QuanLyMenu.js" />
     <Content Include="Scripts\hethong\QuanLyThemDanhMuc.js" />
+    <Content Include="Scripts\hethong\ChiTietHeThong.js" />
     <Content Include="Scripts\hethong\QuanLyTrangChu.js" />
     <Content Include="Scripts\hethong\QuanLyThemTheLoai.js" />
     <Content Include="Web.config">
@@ -2370,6 +2388,25 @@
     <Content Include="Scripts\common\plugins\datatables\extensions\TableTools\images\psd\file_types.psd" />
     <Content Include="Scripts\common\plugins\datatables\extensions\TableTools\images\psd\printer.psd" />
     <Content Include="Scripts\common\plugins\datatables\extensions\TableTools\Readme.md" />
+    <Content Include="Views\HeThong\QuanLyChuyenMuc.cshtml" />
+    <Content Include="Views\HeThong\QuanLyThuocTinh.cshtml" />
+    <Content Include="Views\HeThong\QuanLyGiaTriThuocTinh.cshtml" />
+    <Content Include="Views\HeThong\QuanLyTinhThanhPho.cshtml" />
+    <Content Include="Views\HeThong\QuanLyQuanHuyen.cshtml" />
+    <Content Include="Views\HeThong\QuanLyDonViTinh.cshtml" />
+    <Content Include="Views\HeThong\ThongKeKhachHang.cshtml" />
+    <Content Include="Views\HeThong\ThongKeCuaHang.cshtml" />
+    <Content Include="Views\HeThong\ThongKeSanPham.cshtml" />
+    <Content Include="Views\HeThong\ThongKeGiaoDich.cshtml" />
+    <Content Include="Views\HeThong\ThongKeGiamGia.cshtml" />
+    <Content Include="Views\HeThong\QuanLyHinhAnh.cshtml" />
+    <Content Include="Views\HeThong\ChiTietHeThong.cshtml" />
+    <Content Include="Views\HeThong\QuanLyNhanVien.cshtml" />
+    <Content Include="Views\HeThong\QuanLyPhanQuyen.cshtml" />
+    <Content Include="Views\HeThong\QuanLyVanChuyen.cshtml" />
+    <Content Include="Views\HeThong\QuanLyKhoanCach.cshtml" />
+    <Content Include="Views\HeThong\ForgotPassword.cshtml" />
+    <None Include="Views\HeThong\ThongKeBinhLuan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
