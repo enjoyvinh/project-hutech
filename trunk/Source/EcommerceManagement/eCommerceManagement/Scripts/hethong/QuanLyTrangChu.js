@@ -35,7 +35,6 @@ QuanLyTrangChuModule.factory('QuanLyTrangChuModel', ['BaseModel',
 		            tonggiatriloinhuan: 0,
 		        },
 		        list: [],
-		        filtered: []
 		    };
 
 		    return model;
@@ -156,17 +155,16 @@ QuanLyTrangChuModule.controller('QuanLyTrangChuControl', function ($rootScope,
             });
         };
 
-        $scope.doThongKe = function () {
+        //$scope.doThongKe = function () {
 
-            $rootScope.$broadcast('doPost', {
-                action: 'api/API_HeThong_Dashboard/doDashboard',
-                params: {},
-                callback: function (result) {
-                    if (!ValidateUtil.isValidTextEmpty(result.SUCCESS)) {
+        //    $rootScope.$broadcast('doPost', {
+        //        action: 'api/API_HeThong_CuaHang/doDashboard',
+        //        params: {},
+        //        callback: function (result) {
 
-                }
-            });
-        };
+        //        }
+        //    });
+        //};
 
         setTimeout(function () {
             $scope.doThongKe();
