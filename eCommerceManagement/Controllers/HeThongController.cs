@@ -18,5 +18,20 @@ namespace eCommerceManagement.Controllers
         {
             return View();
         }
+    
+        public ActionResult QuanLyNhanVien()
+        {
+            return View();
+        }
+
+        public ActionResult ThemNhanVien()
+        {
+            return View();
+        }
+
+        public ActionResult CapNhatNhanVien()
+        {
+            return View();
+        }
     }
 }

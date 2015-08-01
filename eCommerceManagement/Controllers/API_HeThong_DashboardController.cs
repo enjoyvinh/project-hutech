@@ -19,23 +19,24 @@ namespace eCommerceManagement.Controllers
             Hashtable result = new Hashtable();
             Int64[] chartGiaoDichThangCong = new Int64[12];
             Int64[] chartGiaoDichThatBai = new Int64[12];
-
+            Int16 trangThaiHoaDon =Convert.ToInt16(AppConstraints.ONE);
             try
             {
                 for (Int16 i = 0; i < 12; i++)
                 {
                     Int16 thang = i;
-                    Int64 value = dashboardService.getTongHoaDonTheoThang(++thang, 1);
+                    Int64 value = dashboardService.getTongHoaDonTheoThang(++thang, trangThaiHoaDon);
                     if (!value.Equals(0))
                     {
                         chartGiaoDichThangCong[i] = value;
                     }
                 }
 
+                trangThaiHoaDon = Convert.ToInt16(AppConstraints.ZERO);
                 for (Int16 i = 0; i < 12; i++)
                 {
                     Int16 thang = i;
-                    Int64 value = dashboardService.getTongHoaDonTheoThang(++thang, 2);
+                    Int64 value = dashboardService.getTongHoaDonTheoThang(++thang, trangThaiHoaDon);
                     if (!value.Equals(0))
                     {
                         chartGiaoDichThatBai[i] = value;
@@ -48,16 +49,14 @@ namespace eCommerceManagement.Controllers
                 result.Add("tongcuahang", dashboardService.getTongCuaHang());
                 result.Add("tongsanpham", dashboardService.getTongSanPham());
                 result.Add("tongkhachhang", dashboardService.getTongKhachHang());
-                result.Add("tongluotdanhgiabinhluan", dashboardService.getTongDanhGia());
+                result.Add("tongluotdanhgiabinhluan", 0);
 
-                result.Add("phantramtonggiatritoansan", dashboardService.getTongDanhGia());
-                result.Add("tonggiatritoansan", dashboardService.getTongDanhGia());
-                result.Add("phantramkhoiluonggiaodich", dashboardService.getTongDanhGia());
-                result.Add("khoiluonggiaodich", dashboardService.getTongDanhGia());
-                result.Add("phantramtonggiatrigiaodich", dashboardService.getTongDanhGia());
-                result.Add("tonggiatrigiaodich", dashboardService.getTongDanhGia());
-                result.Add("phantram", dashboardService.getTongDanhGia());
-                result.Add("tonggiatri", dashboardService.getTongDanhGia());
+                result.Add("phantramtonggiatritoansan", dashboardService.getPhanTramTongGiaTri());
+                result.Add("tonggiatritoansan", dashboardService.getTongGiaTri());
+                result.Add("phantramkhoiluonggiaodich", dashboardService.getPhanTramKhoiLuong());
+                result.Add("khoiluonggiaodich", dashboardService.getTongKhoiLuong());
+                result.Add("phantramtonggiatrigiaodich", dashboardService.getPhanTramGiaoDich());
+                result.Add("tonggiatrigiaodich", dashboardService.getTongGiaTriGiaoDich());
 
                 result.Add(AppConstraints.SUCCESS, AppConstraints.SUCCESS);
             }

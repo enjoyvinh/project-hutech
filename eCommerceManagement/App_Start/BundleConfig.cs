@@ -71,12 +71,24 @@ namespace eCommerceManagement
                     , "~/Scripts/common/plugins/nguploadfile/ng-file-upload.js"
                     , "~/Scripts/common/plugins/nguploadfile/upload.js"
                     , "~/Scripts/common/angular-ui-tree.js"
-                    //, "~/Scripts/common/chosen.proto.js"
+            //, "~/Scripts/common/chosen.proto.js"
             ));
 
             //TODO: Module Chức Năng 
             bundles.Add(new ScriptBundle("~/bundles/quanlydangnhapjs").Include(
                         "~/Scripts/hethong/QuanLyDangNhap.js"));
+
+
+            /* Module Quản Lý Nhân Viên */
+            bundles.Add(new ScriptBundle("~/bundles/quanlynhanvienjs").Include(
+                        "~/Scripts/hethong/QuanLyNhanVien.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/themnhanvienjs").Include(
+                        "~/Scripts/hethong/ThemNhanVien.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/capnhatnhanvienjs").Include(
+                        "~/Scripts/hethong/CapNhatNhanVien.js"));
+            /* Module Quản Lý Nhân Viên */
 
 
             bundles.Add(new ScriptBundle("~/bundles/dashboard").Include(

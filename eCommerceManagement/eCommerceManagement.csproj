@@ -2255,6 +2255,8 @@
     <Content Include="Scripts\hethong\QuanLyGiaTriThuocTinh.js" />
     <Content Include="Scripts\hethong\QuanLyHinhAnh.js" />
     <Content Include="Scripts\hethong\QuanLyKhoanCach.js" />
+    <Content Include="Scripts\hethong\CapNhatNhanVien.js" />
+    <Content Include="Scripts\hethong\ThemNhanVien.js" />
     <Content Include="Scripts\hethong\QuanLyPhanQuyen.js" />
     <Content Include="Scripts\hethong\QuanLyQuanHuyen.js" />
     <Content Include="Scripts\hethong\QuanLyThuocTinh.js" />
