@@ -24,9 +24,91 @@ namespace DAOs.DAO
 
                 cmd.CommandText = @"SELECT COUNT([SOHOADON])
                                       FROM [SF_HOADON]
-                                    WHERE [TRANGTHAIHOADON] = @TrangThaiHoaDon";
+                                    WHERE [TRANGTHAIHOADON] = @TrangThaiHoaDon
+                                    AND MONTH([NGAYLAP]) = @Thang
+                                    AND YEAR([NGAYLAP]) = @Nam";
 
                 cmd.Parameters.Add("@TrangThaiHoaDon", SqlDbType.Int).Value = trangThaiHoaDon;
+                cmd.Parameters.Add("@Thang", SqlDbType.Int).Value = thang;
+                cmd.Parameters.Add("@Nam", SqlDbType.Int).Value = DateTime.Now.Year;
+
+                cmd.Connection = conn;
+                cmd.Transaction = transaction;
+                cmd.CommandType = CommandType.Text;
+
+                try
+                {
+                    result = Convert.ToInt64(cmd.ExecuteScalar());
+
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    errorTransaction(ex);
+                }
+                finally
+                {
+                    closeConnection();
+                }
+            }
+
+            return result;
+        }
+
+        public Int64 getTongHoaDonTheoNam(Int16 Nam, Int16 trangThaiHoaDon)
+        {
+            Int64 result = 0;
+
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                openConnection();
+
+                cmd.CommandText = @"SELECT COUNT([SOHOADON])
+                                      FROM [SF_HOADON]
+                                    WHERE [TRANGTHAIHOADON] = @TrangThaiHoaDon
+                                    AND YEAR([NGAYLAP]) = @Nam;";
+
+                cmd.Parameters.Add("@TrangThaiHoaDon", SqlDbType.Int).Value = trangThaiHoaDon;
+                cmd.Parameters.Add("@Nam", SqlDbType.Int).Value = Nam;
+
+                cmd.Connection = conn;
+                cmd.Transaction = transaction;
+                cmd.CommandType = CommandType.Text;
+
+                try
+                {
+                    result = Convert.ToInt64(cmd.ExecuteScalar());
+
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    errorTransaction(ex);
+                }
+                finally
+                {
+                    closeConnection();
+                }
+            }
+
+            return result;
+        }
+
+        public Decimal getTongGiaTriHoaDonTheoNam(Int16 Nam, Int16 trangThaiHoaDon)
+        {
+            Decimal result = Decimal.Zero;
+
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                openConnection();
+
+                cmd.CommandText = @"SELECT SUM([TONGTIEN])
+                                      FROM [SF_HOADON]
+                                    WHERE [TRANGTHAIHOADON] = @TrangThaiHoaDon
+                                    AND YEAR([NGAYLAP]) = @Nam;";
+
+                cmd.Parameters.Add("@TrangThaiHoaDon", SqlDbType.Int).Value = trangThaiHoaDon;
+                cmd.Parameters.Add("@Nam", SqlDbType.Int).Value = Nam;
 
                 cmd.Connection = conn;
                 cmd.Transaction = transaction;

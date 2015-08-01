@@ -49,5 +49,84 @@ namespace Services.Modules
             Int64 tongHoaDonTheoThang = hoaDonDAO.getTongHoaDonTheoThang(thang, trangThaiHoaDon);
             return tongHoaDonTheoThang;
         }
+
+        public Int64 getPhanTramTongGiaTri()
+        {
+            Int64 result = 100;
+
+            DateTime lastYear = DateTime.Today.AddYears(-1);
+
+            Decimal tongGiaTriNamTruoc = sanPhamDAO.getTongGiaTriSanPhamTheoNam(lastYear.Year);
+
+            Decimal tongGiaTriNamHienTai = sanPhamDAO.getTongGiaTriSanPhamTheoNam(DateTime.Now.Year);
+
+            if(!tongGiaTriNamTruoc.Equals(Decimal.Zero))
+            {
+                Decimal temp = ((tongGiaTriNamHienTai - tongGiaTriNamTruoc) * 100) / tongGiaTriNamTruoc;
+
+                result = Convert.ToInt64(temp);
+            }
+
+            return result;
+        }
+
+        public Decimal getTongGiaTri()
+        {
+            Decimal result = sanPhamDAO.getTongGiaTriSanPhamTheoNam(DateTime.Now.Year);
+
+            return result;
+        }
+
+        public Int64 getPhanTramKhoiLuong()
+        {
+            Int64 result = 100;
+
+            DateTime lastYear = DateTime.Today.AddYears(-1);
+
+            Int64 tongKhoiLuongNamTruoc = hoaDonDAO.getTongHoaDonTheoNam(Convert.ToInt16(lastYear.Year),1);
+
+            Int64 tongKhoiLuongNamHienTai = hoaDonDAO.getTongHoaDonTheoNam(Convert.ToInt16(DateTime.Now.Year),1);
+
+            if (!tongKhoiLuongNamTruoc.Equals(0))
+            {
+                result = ((tongKhoiLuongNamHienTai - tongKhoiLuongNamTruoc) * 100) / tongKhoiLuongNamTruoc;
+            }
+
+            return result;
+        }
+
+        public Int64 getTongKhoiLuong()
+        {
+            Int64 result = hoaDonDAO.getTongHoaDonTheoNam(Convert.ToInt16(DateTime.Now.Year),1);
+
+            return result;
+        }
+
+        public Int64 getPhanTramGiaoDich()
+        {
+            Int64 result = 100;
+
+            DateTime lastYear = DateTime.Today.AddYears(-1);
+
+            Decimal tongKhoiLuongNamTruoc = hoaDonDAO.getTongGiaTriHoaDonTheoNam(Convert.ToInt16(lastYear.Year), 1);
+
+            Decimal tongKhoiLuongNamHienTai = hoaDonDAO.getTongGiaTriHoaDonTheoNam(Convert.ToInt16(DateTime.Now.Year), 1);
+
+            if (!tongKhoiLuongNamTruoc.Equals(0))
+            {
+                Decimal temp = ((tongKhoiLuongNamHienTai - tongKhoiLuongNamTruoc) * 100) / tongKhoiLuongNamTruoc;
+
+                result = Convert.ToInt64(temp);
+            }
+
+            return result;
+        }
+
+        public Decimal getTongGiaTriGiaoDich()
+        {
+            Decimal result = hoaDonDAO.getTongGiaTriHoaDonTheoNam(Convert.ToInt16(DateTime.Now.Year), 1);
+
+            return result;
+        }
     }
 }

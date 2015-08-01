@@ -22,9 +22,12 @@ namespace DAOs.DAO
             {
                 openConnection();
 
+                //cmd.CommandText = @"SELECT COUNT([MASANPHAM])
+                //                      FROM [SF_SANPHAM]
+                //                    WHERE YEAR([NGAYTAO]) >= YEAR(GETDATE())";
+
                 cmd.CommandText = @"SELECT COUNT([MASANPHAM])
-                                      FROM [SF_SANPHAM]
-                                    WHERE YEAR([NGAYTAO]) >= YEAR(GETDATE())";
+                                      FROM [SF_SANPHAM]";
 
                 cmd.Connection = conn;
                 cmd.Transaction = transaction;
@@ -33,6 +36,77 @@ namespace DAOs.DAO
                 try
                 {
                     result = Convert.ToInt64(cmd.ExecuteScalar());
+
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    errorTransaction(ex);
+                }
+                finally
+                {
+                    closeConnection();
+                }
+            }
+
+            return result;
+        }
+
+        public Decimal getTongGiaTriSanPham()
+        {
+            Decimal result = Decimal.Zero;
+
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                openConnection();
+
+                cmd.CommandText = @"SELECT SUM(SOLUONGTONKHO + DONGIACU)
+                                    FROM SF_SANPHAM";
+
+                cmd.Connection = conn;
+                cmd.Transaction = transaction;
+                cmd.CommandType = CommandType.Text;
+
+                try
+                {
+                    result = Convert.ToDecimal(cmd.ExecuteScalar());
+
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    errorTransaction(ex);
+                }
+                finally
+                {
+                    closeConnection();
+                }
+            }
+
+            return result;
+        }
+
+        public Decimal getTongGiaTriSanPhamTheoNam(int Nam)
+        {
+            Decimal result = Decimal.Zero;
+
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                openConnection();
+
+                cmd.CommandText = @"SELECT SUM(SOLUONGTONKHO + DONGIACU)
+                                    FROM SF_SANPHAM
+                                    WHERE YEAR(NGAYTAO) = @NAM;";
+
+                cmd.Parameters.Add("@NAM", SqlDbType.Int).Value = Nam;
+
+                cmd.Connection = conn;
+                cmd.Transaction = transaction;
+                cmd.CommandType = CommandType.Text;
+
+                try
+                {
+                    result = Convert.ToDecimal(cmd.ExecuteScalar());
 
                     return result;
                 }

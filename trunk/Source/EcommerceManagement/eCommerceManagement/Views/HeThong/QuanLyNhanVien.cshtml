@@ -6,26 +6,26 @@
 @Scripts.Render("~/bundles/hethongheaderjs")
 @Scripts.Render("~/bundles/hethongmenujs")
 
-@Scripts.Render("~/bundles/quanlythemdanhmucjs")
-@Scripts.Render("~/bundles/quanlydanhmucjs")
+@Scripts.Render("~/bundles/themnhanvienjs")
+@Scripts.Render("~/bundles/capnhatnhanvienjs")
+@Scripts.Render("~/bundles/quanlynhanvienjs")
 
-<div class="wrapper" ng-app="QuanLyDanhMucModule" ng-controller="commonCtrl" ng-cloak>
+<div class="wrapper" ng-app="QuanLyNhanVienModule" ng-controller="commonCtrl" ng-cloak>
 
-    @Html.Partial("~/Views/Shared/_Layout_Header.cshtml")
+    @Html.Partial("~/Views/Shared/_HeThong_Header.cshtml")
 
-    @Html.Partial("~/Views/Shared/_Layout_Menu.cshtml")
+    @Html.Partial("~/Views/Shared/_HeThong_Menu.cshtml")
 
     <!-- Right side column. Contains the navbar and content of the page -->
-    <div class="content-wrapper" ng-controller='QuanLyDanhMucControl' click-event-listener ng-cloak>
-        <loading></loading>
+    <div class="content-wrapper" ng-controller='QuanLyNhanVienControl' click-event-listener>
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Quản Lý Danh Mục
+                Quản Lý Nhân Viên
             </h1>
             <ol class="breadcrumb">
-                <li><a href="home"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-                <li class="active">Quản Lý Danh Mục</li>
+                <li><a href="Dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                <li class="active"><i class="fa fa-group"></i> Danh Sách Nhân Viên</li>
             </ol>
         </section>
 
@@ -36,8 +36,8 @@
                 <div class="panel-heading clearfix">
                     <div class="panel-title pull-left">
                         <div class="pull-right">
-                            <i class="fa fa-list-alt"></i>
-                            Quản Lý Danh Mục
+                            <i class="fa fa-group"></i>&nbsp;
+                            Danh Sách Nhân Viên
                         </div>
                     </div>
                     <div class="pull-right">
@@ -50,26 +50,112 @@
                         <form class="form-horizontal" role="form">
                             <div class="row">
                                 <div class="col-sm-12 col-lg-12">
-                                    <div class="form-group">
-                                        <label for="tendanhmuc" class="col-md-2 control-label">
-                                            Tên Danh Mục
+                                    <div class="form-group col-sm-6">
+                                        <label for="ngaythang" class="col-md-3 control-label">
+                                            Mã Nhân Viên:
                                         </label>
-                                        <div class="col-md-4">
-                                            <input type="text" class="form-control" id="tentheloai"
-                                                   name="tentheloai" maxlength="20"
-                                                   ng-model="model.form.timkiem.tentheloai" auto-focus="true">
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="tieude"
+                                                   name="tieude" maxlength="20"
+                                                   ng-model="model.form.timkiem.manhanvien" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label for="matheloai" class="col-md-3 control-label">
+                                            Nhóm Quyền:
+                                        </label>
+                                        <div class="col-md-8">
+                                            <select multiple chosen-select
+                                                    chosen-deselect="false"
+                                                    id="_maquyen"
+                                                    muilti-dropdow="true"
+                                                    max-selected=""
+                                                    ng-model="model.form.timkiem.maquyen"
+                                                    data-list="model.data.comboBoxNhomQuyen"
+                                                    ng-options="item.MAUQYEN as item.TENQUYEN for item in model.data.comboBoxNhomQuyen">
+                                                <option></option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-6 col-lg-2">
-                                    <button class="btn btn-block btn-primary"
-                                            ng-click="getDanhSach(model.form.timkiem)">
-                                        <i class="glyphicon glyphicon-search"></i>
-                                        Tìm Kiếm
-                                    </button>
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="form-group col-sm-6">
+                                        <label for="tieude" class="col-md-3 control-label">
+                                            Tên Nhân Viên:
+                                        </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="tieude"
+                                                   name="tieude" maxlength="20"
+                                                   ng-model="model.form.timkiem.tennhanvien" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-sm-6">
+                                        <label for="tacgia" class="col-md-3 control-label">
+                                            Ngày Sinh:
+                                        </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="tacgia"
+                                                   name="tacgia" maxlength="20"
+                                                   ng-model="model.form.timkiem.tacgia" />
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="form-group col-md-6">
+                                        <label for="noidungtomtat" class="col-md-3 control-label">
+                                            Số CMND:
+                                        </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="tacgia"
+                                                   name="tacgia" maxlength="20"
+                                                   ng-model="model.form.timkiem.cmnd" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="noidungtomtat" class="col-md-3 control-label">
+                                            Trạng Thái:
+                                        </label>
+                                        <div class="col-md-4">
+                                            <input bs-switch
+                                                   ng-model="model.form.chitiet.xoa"
+                                                   type="checkbox"
+                                                   switch-active="{{ isActive }}"
+                                                   switch-on-text="Mở"
+                                                   switch-off-text="Đóng"
+                                                   switch-on-color="{{ onColor }}"
+                                                   switch-off-color="danger"
+                                                   switch-animate="{{ animate }}"
+                                                   switch-size="{{ size }}"
+                                                   switch-label="{{ label }}"
+                                                   switch-icon="{{ icon }}"
+                                                   switch-radio-off="{{ radioOff }}"
+                                                   switch-label-width="{{ labelWidth }}"
+                                                   switch-handle-width="{{ handleWidth }}"
+                                                   switch-wrapper="{{ wrapper }}"
+                                                   ng-value="'uno'"
+                                                   ng-true-value="'1'"
+                                                   ng-false-value="'0'"
+                                                   switch-inverse="{{ !inverse }}"
+                                                   switch-readonly="{{ readonly }}">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button class="btn btn-block btn-primary"
+                                                    ng-click="getDanhSachBanTin(model.form.timkiem)">
+                                                <i class="glyphicon glyphicon-search"></i>
+                                                <spring:message code="quanly.common.button.search" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
                             </div>
                         </form>
                         <div class="clearfix"></div>
@@ -77,14 +163,12 @@
                         <div class="table-search-sort-paging">
                             <div class="form-inline">
                                 <div class="pull-left width-240">
-                                    Từ {{(model.currentPage-1)*model.entryLimit + 1}} Đến {{(model.currentPage-1)*model.entryLimit + 1}} Trong Tổng Số {{model.form.filtered.length}}
+                                    <spring:message code="quanly.common.label.filtered" />
                                 </div>
                                 <div class="pull-right width-240">
                                     <div class="pull-left">
                                         <label for="searchFilter"
-                                               class="title pull-right margin-t-7">
-                                            Lọc
-                                        </label>
+                                               class="title pull-right margin-t-7">Lọc</label>
                                     </div>
                                     <div class="pull-right">
                                         <input type="text" ng-model="searchFilter"
@@ -100,53 +184,63 @@
                                 <table class="table-bordered table-striped table-condensed table-hover" id="table-search">
                                     <thead class="cf">
                                         <tr>
-                                            <th width="1%" class="text-center">
+                                            <th width="1%" class="text-center" style="vertical-align: middle;">
                                                 <div class="checkbox checkbox-info">
-                                                    <input ng-click="checkAll()" id="checkAll" name="checkAll" class="styled" type="checkbox">
+                                                    <input id="checkAll" name="checkAll" class="styled" type="checkbox">
                                                     <label for="checkAll"></label>
                                                 </div>
                                             </th>
-                                            <th col-sort predicate="'DanhMucID'" by="predicate" reverse="reverse" width="15%" class="text-center">
-                                                Mã Danh Mục
+                                            <th col-sort predicate="'madanhmuc'" by="predicate" reverse="reverse" width="7%" class="text-center">
+                                                Thể Loại
                                             </th>
-                                            <th col-sort predicate="'DanhMucName'" by="predicate" reverse="reverse" width="35%" class="text-left">
-                                                Tên Danh Mục
+                                            <th col-sort predicate="'madanhmuc'" by="predicate" reverse="reverse" width="7%" class="text-center">
+                                                Tiêu Đề
                                             </th>
-                                            <th col-sort predicate="'TENTHELOAI'" by="predicate" reverse="reverse" width="35%" class="text-left">
-                                                Danh Mục Cha
+                                            <th col-sort predicate="'madanhmuc'" by="predicate" reverse="reverse" width="7%" class="text-center">
+                                                Ảnh Đại Diện
                                             </th>
-                                            <th class="text-center">Chức Năng</th>
+                                            <th col-sort predicate="'madanhmuc'" by="predicate" reverse="reverse" width="17%" class="text-center">
+                                                Nội Dung Tóm Tắt
+                                            </th>
+                                            <th col-sort predicate="'tendanhmuc'" by="predicate" reverse="reverse" width="7%" class="text-center">
+                                                Tác Giả
+                                            </th>
+                                            <th width="5%" class="text-center">Chức Năng</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr ng-repeat="row in model.form.filtered = model.form.list | filter : searchFilter |
                 											orderBy : predicate : reverse | startFrom : (model.currentPage-1)*model.entryLimit |
                 											limitTo : model.entryLimit">
-                                            <td data-title="Chọn:" class="text-center">
+                                            <td data-title="" class="text-center">
                                                 <div class="checkbox checkbox-info">
-                                                    <input id="checkValues{{row.DanhMucID}}" name="checkValues{{row.DanhMucID}}"
-                                                           class="styled" type="checkbox" />
-                                                    <label for="checkValues{{row.DanhMucID}}"></label>
+                                                    <input id="checkValues{{row.madanhmuc}}" name="checkValues{{row.madanhmuc}}" class="styled" type="checkbox" value="{{row.madanhmuc}}">
+                                                    <label for="checkValues{{row.madanhmuc}}"></label>
                                                 </div>
                                             </td>
-                                            <td data-title="Mã Danh Mục:" class="text-center">
-                                                <a href="#"
-                                                   ng-click="goToUpdate(row)">{{row.DanhMucID}}</a>
+                                            <td data-title="Mã Bài Viết" class="text-center">
+                                                {{row.TENTHELOAI}}
                                             </td>
-                                            <td data-title="Tên Danh Mục">
-                                                {{row.DanhMucName}}
+                                            <td data-title="">
+                                                {{row.TIEUDE}}
                                             </td>
-                                            <td data-title="Tên Danh Mục Cha">
-                                               
+                                            <td data-title="">
+                                                <img ng-src="~/Images/HinhAnhBanTin/{{row.HINHANH}}" fallback-src="~/Images/imagenotfound.jpg" loading-src="~/Images/imagenotfound.jpg" width="100%" height="100px" />
                                             </td>
-                                            <td data-title="Chức Năng:" class="text-center">
+                                            <td data-title="">
+                                                {{row.NOIDUNGTOMTAT}}
+                                            </td>
+                                            <td data-title="">
+                                                {{row.TENTACGIA}}
+                                            </td>
+                                            <td data-title="Chức Năng" class="text-center">
                                                 <div class="row">
-                                                    <div class="col-md-4 pull-left">
-                                                        <a class="btn btn-default btn-flat" ng-click="deleteItem(row)">
+                                                    <div class="col-sm-4">
+                                                        <a class="btn btn-default btn-flat" ng-click="delBanTin(row)">
                                                             <i class="fa fa-trash"></i>
                                                         </a>
                                                     </div>
-                                                    <div class="col-md-1 pull-left">
+                                                    <div class="col-sm-4">
                                                         <a class="btn btn-default btn-flat" ng-click="goToUpdate(row)">
                                                             <i class="fa fa-pencil"></i>
                                                         </a>
@@ -156,7 +250,6 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                {{array}}
                             </div>
                             <div ng-show="model.filteredItems == 0">
                                 <h4>
@@ -171,11 +264,7 @@
                                 </button>
                             </div>
                             <div class="pull-right" ng-show="model.filteredItems > 0">
-                                <pagination page="model.currentPage"
-                                            on-select-page="setPage(page)" boundary-links="true"
-                                            total-items="model.filteredItems"
-                                            items-per-page="model.entryLimit" class="pagination-small"
-                                            rotate="false" max-size="5"></pagination>
+
                             </div>
                         </div>
                         <!-- end add contents here -->
@@ -187,5 +276,5 @@
         <!-- /.content -->
     </div>
 
-    @Html.Partial("~/Views/Shared/_Layout_Footer.cshtml")
+    @Html.Partial("~/Views/Shared/_HeThong_Footer.cshtml")
 </div>
