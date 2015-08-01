@@ -102,7 +102,7 @@ namespace DAOs.DAO
             {
                 openConnection();
 
-                cmd.CommandText = @"SELECT SUM([TONGTIEN])
+                cmd.CommandText = @"SELECT COALESCE(SUM([TONGTIEN]),0)
                                       FROM [SF_HOADON]
                                     WHERE [TRANGTHAIHOADON] = @TrangThaiHoaDon
                                     AND YEAR([NGAYLAP]) = @Nam;";

@@ -60,7 +60,7 @@ namespace DAOs.DAO
             {
                 openConnection();
 
-                cmd.CommandText = @"SELECT SUM(SOLUONGTONKHO + DONGIACU)
+                cmd.CommandText = @"SELECT COALESCE(SUM(SOLUONGTONKHO + DONGIACU),0)
                                     FROM SF_SANPHAM";
 
                 cmd.Connection = conn;
@@ -94,7 +94,7 @@ namespace DAOs.DAO
             {
                 openConnection();
 
-                cmd.CommandText = @"SELECT SUM(SOLUONGTONKHO + DONGIACU)
+                cmd.CommandText = @"SELECT COALESCE(SUM(SOLUONGTONKHO + DONGIACU),0)
                                     FROM SF_SANPHAM
                                     WHERE YEAR(NGAYTAO) = @NAM;";
 
