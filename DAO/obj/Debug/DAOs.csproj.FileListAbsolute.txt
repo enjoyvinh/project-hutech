@@ -43,6 +43,7 @@ E:\Doantotnghiep\Doantotnghiep\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFra
 E:\Doantotnghiep\Doantotnghiep\DAO\obj\Debug\DAOs.csprojResolveAssemblyReference.cache
 E:\Doantotnghiep\Doantotnghiep\DAO\obj\Debug\DAOs.dll
 E:\Doantotnghiep\Doantotnghiep\DAO\obj\Debug\DAOs.pdb
+D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\DAOs.dll.config
 D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\DAOs.dll
 D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\DAOs.pdb
 D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\EntityFramework.dll
@@ -56,4 +57,3 @@ D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identi
 D:\eCommerceManagement\eCommerceManagement\DAO\obj\Debug\DAOs.csprojResolveAssemblyReference.cache
 D:\eCommerceManagement\eCommerceManagement\DAO\obj\Debug\DAOs.dll
 D:\eCommerceManagement\eCommerceManagement\DAO\obj\Debug\DAOs.pdb
-D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\DAOs.dll.config

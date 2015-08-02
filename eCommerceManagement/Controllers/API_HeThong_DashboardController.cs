@@ -4,6 +4,7 @@ using System.Web.Http;
 using DAOs.DTO;
 using System;
 using DAOs.Common;
+using System.Collections.Generic;
 
 namespace eCommerceManagement.Controllers
 {
@@ -64,6 +65,34 @@ namespace eCommerceManagement.Controllers
             {
                 result.Add(AppConstraints.ERROR, ex.ToString());
             }
+
+            return result;
+        }
+
+        // POST api/<controller>
+        [HttpPost]
+        [AllowAnonymous]
+        public Hashtable getCuaHangDoanhThuCao(REQUEST_NGAYTHANGNAMDTO param)
+        {
+            Hashtable result = new Hashtable();
+
+            List<VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO> dsCuaHang = dashboardService.getCuaHangDoanhThuCao(param);
+
+            result.Add("dsCuaHang", dsCuaHang);
+
+            return result;
+        }
+
+        // POST api/<controller>
+        [HttpPost]
+        [AllowAnonymous]
+        public Hashtable getHoaDonGiaTriCaoNhat(REQUEST_NGAYTHANGNAMDTO param)
+        {
+            Hashtable result = new Hashtable();
+
+            List<VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO> dsHoaDon = dashboardService.getHoaDonGiaTriCaoNhat(param);
+
+            result.Add("dsHoaDon", dsHoaDon);
 
             return result;
         }

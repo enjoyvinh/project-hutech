@@ -67,11 +67,11 @@ namespace eCommerceManagement
                     , "~/Scripts/common/jquery.powertip.js"
                     , "~/Scripts/common/plugins/jqueryvalidation/jquery.validate.js"
                     , "~/Scripts/common/angular-ckeditor.js"
-                    , "~/Scripts/common/plugins/nguploadfile/ng-file-upload-shim.js"
-                    , "~/Scripts/common/plugins/nguploadfile/ng-file-upload.js"
-                    , "~/Scripts/common/plugins/nguploadfile/upload.js"
-                    , "~/Scripts/common/angular-ui-tree.js"
-            //, "~/Scripts/common/chosen.proto.js"
+                    //, "~/Scripts/common/plugins/nguploadfile/ng-file-upload-shim.js"
+                    //, "~/Scripts/common/plugins/nguploadfile/ng-file-upload.js"
+                    //, "~/Scripts/common/plugins/nguploadfile/upload.js"
+                    //, "~/Scripts/common/angular-ui-tree.js"
+                    //, "~/Scripts/common/chosen.proto.js"
             ));
 
             //TODO: Module Chức Năng 

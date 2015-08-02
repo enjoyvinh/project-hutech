@@ -1,4 +1,5 @@
-﻿@{
+﻿@using DAOs.Common;
+@{
     //if(!WebSecurity.IsAuthenticated)
     //{
     //Response.Redirect("~/Home/Login");
@@ -84,7 +85,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="box">
+                    <div class="box box-primary">
                         <div class="box-header with-border">
                             <h3 class="box-title"><i class="fa fa-line-chart"></i> Báo Cáo Tóm Tắt Năm @DateTime.Now.Year</h3>
                             <div class="box-tools pull-right">
@@ -101,6 +102,7 @@
                                         <li><a href="#">Separated link</a></li>
                                       </ul>
                                     </div>*@
+                                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                                 <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                             </div>
                         </div><!-- /.box-header -->
@@ -219,13 +221,14 @@
             </div><!-- /.row -->
             <!-- Main row -->
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <!-- TABLE: LATEST ORDERS -->
-                    <div class="box box-info">
+                    <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><i class="fa fa-bar-chart"></i> Danh Sách Cửa Hàng Có Doanh Thu Cao Nhất Trong Tháng @DateTime.Now.Month Năm @DateTime.Now.Year</h3>
+                            <h3 class="box-title"><i class="fa fa fa-home"></i> Cửa Hàng Có Doanh Thu Cao Nhất Trong Tháng @DateTime.Now.Month Năm @DateTime.Now.Year</h3>
                             <div class="box-tools pull-right">
-                                <button class="btn btn-box-tool"><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-box-tool" ng-click="getDanhSachCuaHang(@DateTime.Now.Month, @DateTime.Now.Year)"><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                                 <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                             </div>
                         </div><!-- /.box-header -->
@@ -234,30 +237,31 @@
                                 <table class="table no-margin table-striped table-condensed table-hover"  id="table-search">
                                     <thead class="">
                                         <tr>
-                                            <th width="5%" class="text-center">
-                                                STT
-                                            </th>
-                                            <th col-sort predicate="'DanhMucName'" by="predicate" reverse="reverse" width="35%" class="text-center">
+                                            <th col-sort predicate="'TENCUAHANG'" by="predicate" reverse="reverse" width="30%" class="text-center">
                                                 Tên Cửa Hàng
                                             </th>
-                                            <th col-sort predicate="'DanhMucName'" by="predicate" reverse="reverse" width="10%" class="text-center">
+                                            <th col-sort predicate="'CHUNGNHAN'" by="predicate" reverse="reverse" width="15%" class="text-center">
                                                 Loại
                                             </th>
-                                            <th col-sort predicate="'TENTHELOAI'" by="predicate" reverse="reverse" width="20%" class="text-center">
+                                            <th col-sort predicate="'TENCUAHANG'" by="predicate" reverse="reverse" width="25%" class="text-center">
                                                 Tên Chủ Cửa Hàng
                                             </th>
-                                            <th col-sort predicate="'TENTHELOAI'" by="predicate" reverse="reverse" width="30%" class="text-center">
+                                            <th col-sort predicate="'DOANHTHU'" by="predicate" reverse="reverse" width="30%" class="text-center">
                                                 Tổng Doanh Thu
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td class="text-left">1</td>
-                                            <td><a href="pages/examples/invoice.html">1</a></td>
-                                            <td><span class="label label-danger">VIP</span></td>
-                                            <td>Út Chuột Store</td>
-                                            <td>{{9999999999999999999 | number}}</td>
+                                        <tr ng-repeat="row in model.form.listDSCuaHang | orderBy : predicate : reverse">
+                                            <td><a href="/HeThong/ChiTietCuaHang?macuahang={{row.MACUAHANG}}">{{row.TENCUAHANG}}</a></td>
+                                            <td class="text-center">
+                                                <span class="label label-default" ng-if="row.CHUNGNHAN == 0">Shop</span>
+                                                <span class="label label-danger" ng-if="row.CHUNGNHAN == 1">VIP 1</span>
+                                                <span class="label label-info" ng-if="row.CHUNGNHAN == 2">VIP 2</span>
+                                                <span class="label label-success" ng-if="row.CHUNGNHAN == 3">VIP 3</span>
+                                            </td>
+                                            <td>{{row.TENCUAHANG}}</td>
+                                            <td class="text-right">{{row.DOANHTHU | number}} @AppConstraints.VND</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -268,59 +272,36 @@
                         </div><!-- /.box-footer -->
                     </div><!-- /.box -->
                 </div><!-- /.col -->
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <!-- PRODUCT LIST -->
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><i class="fa fa-archive"></i> Sản Phẩm Mới Nhất</h3>
+                            <h3 class="box-title"><i class="fa fa-shopping-cart"></i> Hóa Đơn Giá Trị Cao Nhất</h3>
                             <div class="box-tools pull-right">
+                                <button class="btn btn-box-tool" ng-click="getDanhSachCuaHang(@DateTime.Now.Month, @DateTime.Now.Year)"><i class="fa fa-refresh"></i></button>
                                 <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                                 <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                             </div>
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <ul class="products-list product-list-in-box">
-                                <li class="item">
+                                <li class="item" ng-repeat="row in model.form.listDSHoaDon">
                                     <div class="product-img">
-                                        <img src="http://placehold.it/50x50/d2d6de/ffffff" alt="Product Image" />
+                                        <a href="/HeThong/ChiTietCuaHang?macuahang={{row.MACUAHANG}}" title="">
+                                            <img ng-if="row.AVATARCUAHANG !== '@AppConstraints.SHOP_NOIMAGE'"
+                                                 ng-src="~/Images/CuaHang/{{row.MACUAHANG}}/{{row.AVATARCUAHANG}}" 
+                                                 alt="{{row.AVATARCUAHANG}}" 
+                                                 title="{{row.AVATARCUAHANG}}" />
+                                            <img ng-if="row.AVATARCUAHANG === '@AppConstraints.SHOP_NOIMAGE'"
+                                                 ng-src="~/Images/CuaHang/Shop_No_Avatar.png"
+                                                 alt="Cửa Hàng Không Có Ảnh Đại Diện."
+                                                 title="Cửa Hàng Không Có Ảnh Đại Diện." />
+                                        </a>
                                     </div>
                                     <div class="product-info">
-                                        <a href="javascript::;" class="product-title">Samsung TV <span class="label label-warning pull-right">$1800</span></a>
-                                        <span class="product-description">
-                                            Samsung 32" 1080p 60Hz LED Smart HDTV.
-                                        </span>
-                                    </div>
-                                </li><!-- /.item -->
-                                <li class="item">
-                                    <div class="product-img">
-                                        <img src="~/Images/default-50x50.gif" alt="Product Image" />
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="javascript::;" class="product-title">Bicycle <span class="label label-info pull-right">$700</span></a>
-                                        <span class="product-description">
-                                            26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-                                        </span>
-                                    </div>
-                                </li><!-- /.item -->
-                                <li class="item">
-                                    <div class="product-img">
-                                        <img src="~/Images/default-50x50.gif" alt="Product Image" />
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="javascript::;" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
-                                        <span class="product-description">
-                                            Xbox One Console Bundle with Halo Master Chief Collection.
-                                        </span>
-                                    </div>
-                                </li><!-- /.item -->
-                                <li class="item">
-                                    <div class="product-img">
-                                        <img src="~/Images/default-50x50.gif" alt="Product Image" />
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="javascript::;" class="product-title">PlayStation 4 <span class="label label-success pull-right">$399</span></a>
-                                        <span class="product-description">
-                                            PlayStation 4 500GB Console (PS4)
+                                        <a href="/HeThong/ChiTietCuaHang?macuahang={{row.MACUAHANG}}" class="product-title">Số:&nbsp;{{row.SOHOADON}}
+                                        <span class="label label-success pull-right">{{row.TONGTIEN | number}}</span></a>
+                                        <span class="product-description">Ngày Lập Hóa Đơn:&nbsp;{{row.NGAYLAP | date:'dd/MM/yyyy HH:mm'}}
                                         </span>
                                     </div>
                                 </li><!-- /.item -->

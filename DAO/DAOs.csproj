@@ -74,6 +74,7 @@
     <Compile Include="Common\AutoGenerateID.cs" />
     <Compile Include="Common\CheckValid.cs" />
     <Compile Include="Common\ConvertCurrency.cs" />
+    <Compile Include="Common\DBConnection2.cs" />
     <Compile Include="Common\Encryptor.cs" />
     <Compile Include="Common\ObjectCopier.cs" />
     <Compile Include="Common\AppCommon.cs" />
@@ -81,6 +82,9 @@
     <Compile Include="Common\DBConnection.cs" />
     <Compile Include="Common\globalApp.cs" />
     <Compile Include="DAO\BanTinDAO.cs" />
+    <Compile Include="DAO\ChuyenMucDAO.cs" />
+    <Compile Include="DAO\CuaHangDAO.cs" />
+    <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DAO\SF_HoaDonDAO.cs" />
     <Compile Include="DAO\SF_DanhGiaSanPhamDAO.cs" />
     <Compile Include="DAO\SF_KhachHangDAO.cs" />
@@ -93,6 +97,8 @@
     <Compile Include="DAO\ItemStoreDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\TheLoaiDAO.cs" />
+    <Compile Include="DTO\VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO.cs" />
+    <Compile Include="DTO\REQUEST_NGAYTHANGNAMDTO.cs" />
     <Compile Include="DTO\Request_Xoa_DanhMucDTO.cs" />
     <Compile Include="DTO\ChiTietPhieuXuatKho.cs" />
     <Compile Include="DTO\Request_Them_DanhMucDTO.cs" />
@@ -128,6 +134,7 @@
     <Compile Include="DTO\REQUEST_HINHANHSANPHAMDTO.cs" />
     <Compile Include="DTO\VIEW_HINHANHSANPHAMDTO.cs" />
     <Compile Include="DTO\REQUEST_HOADONDTO.cs" />
+    <Compile Include="DTO\VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO.cs" />
     <Compile Include="DTO\VIEW_HOADONDTO.cs" />
     <Compile Include="DTO\REQUEST_KHACHHANGDTO.cs" />
     <Compile Include="DTO\VIEW_KHACHHANGDTO.cs" />
@@ -170,6 +177,7 @@
     <Compile Include="Entities\NhanVien.cs" />
     <Compile Include="Entities\PhieuXuatKho.cs" />
     <Compile Include="Entities\QuocGia.cs" />
+    <Compile Include="Entities\SanPhamEntity.cs" />
     <Compile Include="Entities\SF_BANTINCUAHANG.cs" />
     <Compile Include="Entities\SF_BINHLUAN.cs" />
     <Compile Include="Entities\SF_CHITIETGIAMGIA.cs" />

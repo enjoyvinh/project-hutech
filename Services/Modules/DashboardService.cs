@@ -122,9 +122,22 @@ namespace Services.Modules
             return result;
         }
 
+        public List<VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO> getHoaDonGiaTriCaoNhat(REQUEST_NGAYTHANGNAMDTO param)
+        {
+            List <VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO> result = hoaDonDAO.getHoaDonGiaTriCaoNhat(param);
+            return result;
+        }
+
         public Decimal getTongGiaTriGiaoDich()
         {
             Decimal result = hoaDonDAO.getTongGiaTriHoaDonTheoNam(Convert.ToInt16(DateTime.Now.Year), 1);
+
+            return result;
+        }
+
+        public List<VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO> getCuaHangDoanhThuCao(REQUEST_NGAYTHANGNAMDTO param)
+        {
+            List<VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO> result = cuaHangDAO.getCuaHangDoanhThuCao(param.THANG,param.NAM);
 
             return result;
         }

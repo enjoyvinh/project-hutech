@@ -25,7 +25,9 @@ namespace DAOs.Common
         public static string NIGHT { get { return "9"; } }
         public static string VND { get { return " VNĐ"; } }
         public static string EMPTY { get { return ""; } }
-        
+        public static string BACKFLASH { get { return "/"; } }
+        public static string SHOP_NOIMAGE { get { return "SHOP_NOIMAGE"; } }
+
         #endregion
 
         #region MessageResult

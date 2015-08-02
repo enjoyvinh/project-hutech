@@ -3,7 +3,7 @@
     {
         Layout = "~/Views/Shared/_HeThong_Layout.cshtml";
     }
-    if (@ViewContext.RouteData.Values["controller"].ToString() == "CuaHang")
+    else if (@ViewContext.RouteData.Values["controller"].ToString() == "CuaHang")
     {
         Layout = "~/Views/Shared/_CuaHang_Layout.cshtml";
     }
