@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4694fac40e474cc69f70365fb19c542c" Name="Diagram1">
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_BANTINCUAHANG" Width="1.5" PointX="7.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_BINHLUAN" Width="1.5" PointX="12.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_CUAHANG" Width="1.5" PointX="5.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_CUAHANGYEUTHICH" Width="1.5" PointX="10.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_CHITIETGIAMGIA" Width="1.5" PointX="9.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_CHITIETTHUOCTINHSANPHAM" Width="1.5" PointX="15.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_CHITIETVANCHUYEN" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_CHITIETHINHANHSANPHAM" Width="1.5" PointX="15.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_CHITIETHOADON" Width="1.5" PointX="18" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_CHUONGTRINHGIAMGIA" Width="1.5" PointX="7.5" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_CHUYENMUC" Width="1.5" PointX="8.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_DANHGIASANPHAM" Width="1.5" PointX="15.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_DONVITINH" Width="1.5" PointX="8.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_GIATRITHUOCTINH" Width="1.5" PointX="13.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_HINHANHSANPHAM" Width="1.5" PointX="13.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_HOADON" Width="1.5" PointX="12.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_KHACHHANG" Width="1.5" PointX="10.5" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_KHOANGCACH" Width="1.5" PointX="3" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_NHANVIENQUANTRI" Width="1.5" PointX="5.25" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_NHOMQUYEN" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_PHUONGTHUCVANCHUYEN" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_QUANHUYEN" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_SANPHAM" Width="1.5" PointX="10.5" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_THANHPHO" Width="1.5" PointX="0.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TMDTDB11Model.SF_THUOCTINH" Width="1.5" PointX="11.25" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_BANTIN__MACUA__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_BINHLU__MABIN__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_BINHLU__MAKHA__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_BINHLU__MASAN__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CUAHAN__MACUA__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CUAHAN__MAQUA__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CUAHAN__MAQUY__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHUONG__MACUA__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_HOADON__MACUA__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_SANPHA__MACUA__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CUAHAN__MAKHA__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__MACHU__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__MASAN__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__MAGIA__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__MASAN__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__MAPHU__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__SOHOA__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIETVANCHU__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__MAHIN__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__MASAN__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__MASAN__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHITIE__SOHOA__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_HOADON__MACHU__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_CHUYEN__MACHU__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_SANPHA__MACHU__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_DANHGI__MAKHA__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_DANHGI__MASAN__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_SANPHA__MADON__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_GIATRI__MATHU__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_HOADON__MAKHA__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_KHACHH__MAQUY__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_KHOANG__MATHA__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_KHOANG__MATHA__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_NHANVI__MAQUY__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="TMDTDB11Model.FK__SF_QUANHU__MATHA__59FA5E80" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
