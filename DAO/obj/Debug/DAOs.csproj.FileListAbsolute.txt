@@ -57,3 +57,17 @@ D:\eCommerceManagement\eCommerceManagement\DAO\bin\Debug\Microsoft.AspNet.Identi
 D:\eCommerceManagement\eCommerceManagement\DAO\obj\Debug\DAOs.csprojResolveAssemblyReference.cache
 D:\eCommerceManagement\eCommerceManagement\DAO\obj\Debug\DAOs.dll
 D:\eCommerceManagement\eCommerceManagement\DAO\obj\Debug\DAOs.pdb
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\DAOs.dll.config
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\DAOs.dll
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\DAOs.pdb
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\EntityFramework.dll
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\EntityFramework.xml
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\obj\Debug\DAOs.csprojResolveAssemblyReference.cache
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\obj\Debug\DAOs.dll
+C:\Users\Vinh\Documents\GitHubVisualStudio\project-hutech\DAO\obj\Debug\DAOs.pdb
