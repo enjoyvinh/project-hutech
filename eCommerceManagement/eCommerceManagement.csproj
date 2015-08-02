@@ -135,6 +135,8 @@
       <HintPath>..\packages\Microsoft.Net.Http.2.0.20505.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -211,11 +213,103 @@
     <Compile Include="Controllers\API_HeThong_DashboardController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\CuaHangController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HeThongController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeBKController.cs" />
     <Compile Include="Controllers\API_HeThong_DangNhapController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_BANTINCUAHANG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_BINHLUAN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_CHITIETGIAMGIA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_CHITIETHINHANHSANPHAM.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_CHITIETHOADON.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_CHITIETTHUOCTINHSANPHAM.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_CHITIETVANCHUYEN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_CHUONGTRINHGIAMGIA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_CHUYENMUC.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_CUAHANG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_CUAHANGYEUTHICH.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_DANHGIASANPHAM.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_DONVITINH.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_GIATRITHUOCTINH.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_HINHANHSANPHAM.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_HOADON.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_KHACHHANG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_KHOANGCACH.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_NHANVIENQUANTRI.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_NHOMQUYEN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_PHUONGTHUCVANCHUYEN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_QUANHUYEN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_SANPHAM.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_THANHPHO.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SF_THUOCTINH.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -838,6 +932,7 @@
     <Content Include="Content\hethong\jquery.powertip-red.min.css" />
     <Content Include="Content\hethong\jquery.powertip.css" />
     <Content Include="Content\hethong\nguploadfile.css" />
+    <Content Include="Content\Home\MenuTop.css" />
     <Content Include="Content\quanly\AdminLTE.min.css" />
     <Content Include="Content\quanly\skins\skin-black-light.css" />
     <Content Include="Content\quanly\skins\skin-black-light.min.css" />
@@ -854,7 +949,185 @@
     <Content Include="favicon.png" />
     <Content Include="Images\1377315993_banner.png" />
     <Content Include="Images\AvatarKhachHang\manager%40skyfire.vn.jpg" />
+    <Content Include="Images\Home\a01.png" />
+    <Content Include="Images\Home\a02.png" />
+    <Content Include="Images\Home\a03.png" />
+    <Content Include="Images\Home\a04.png" />
+    <Content Include="Images\Home\a06.png" />
+    <Content Include="Images\Home\a07.png" />
+    <Content Include="Images\Home\a08.png" />
+    <Content Include="Images\Home\a09.png" />
+    <Content Include="Images\Home\a10.png" />
+    <Content Include="Images\Home\a11.png" />
+    <Content Include="Images\Home\a12.png" />
+    <Content Include="Images\Home\a13.png" />
+    <Content Include="Images\Home\a14.png" />
+    <Content Include="Images\Home\a15.png" />
+    <Content Include="Images\Home\a16.png" />
+    <Content Include="Images\Home\a17.png" />
+    <Content Include="Images\Home\a18.png" />
+    <Content Include="Images\Home\a19.png" />
+    <Content Include="Images\Home\a20.png" />
+    <Content Include="Images\Home\a21.png" />
+    <Content Include="Images\Home\a22.png" />
+    <Content Include="Images\Home\b02.png" />
+    <Content Include="Images\Home\b03.png" />
+    <Content Include="Images\Home\b05.png" />
+    <Content Include="Images\Home\b06.png" />
+    <Content Include="Images\Home\b07.png" />
+    <Content Include="Images\Home\b10.png" />
+    <Content Include="Images\Home\b11.png" />
+    <Content Include="Images\Home\b12.png" />
+    <Content Include="Images\Home\b13.png" />
+    <Content Include="Images\Home\b14.png" />
+    <Content Include="Images\Home\b16.png" />
+    <Content Include="Images\Home\b17.png" />
+    <Content Include="Images\Home\b18.png" />
+    <Content Include="Images\Home\b20.png" />
+    <Content Include="Images\Home\b21.png" />
+    <Content Include="Images\Home\back.jpg" />
+    <Content Include="Images\Home\bg-textture.png" />
+    <Content Include="Images\Home\bg-textture_tablet.png" />
+    <Content Include="Images\Home\bg123.png" />
+    <Content Include="Images\Home\bg_footer-712.png" />
+    <Content Include="Images\Home\bg_footer.png" />
+    <Content Include="Images\Home\bg_li_b.png" />
+    <Content Include="Images\Home\bg_li_cate.jpg" />
+    <Content Include="Images\Home\bg_li_nav.png" />
+    <Content Include="Images\Home\bg_nav.png" />
+    <Content Include="Images\Home\bg_price.png" />
+    <Content Include="Images\Home\bg_title_wmb.png" />
+    <Content Include="Images\Home\bg_top_cart.png" />
+    <Content Include="Images\Home\bg_tr_cart.png" />
+    <Content Include="Images\Home\bg_tr_cart_tablet.png" />
+    <Content Include="Images\Home\body_bg.png" />
+    <Content Include="Images\Home\browser-icons.png" />
+    <Content Include="Images\Home\captcha.png" />
+    <Content Include="Images\Home\cart.png" />
+    <Content Include="Images\Home\CartLogo.jpg" />
+    <Content Include="Images\Home\cartlogo.png" />
+    <Content Include="Images\Home\check.png" />
+    <Content Include="Images\Home\close.png" />
+    <Content Include="Images\Home\CM000001.png" />
+    <Content Include="Images\Home\CM000002.png" />
+    <Content Include="Images\Home\CM0000022.jpg" />
+    <Content Include="Images\Home\CM000003.png" />
+    <Content Include="Images\Home\CM000004.png" />
+    <Content Include="Images\Home\CM000005.png" />
+    <Content Include="Images\Home\CM000006.png" />
+    <Content Include="Images\Home\CM000007.png" />
+    <Content Include="Images\Home\CM000008.png" />
+    <Content Include="Images\Home\CM000009.jpg" />
+    <Content Include="Images\Home\CM000010.jpg" />
+    <Content Include="Images\Home\CM000011.jpg" />
+    <Content Include="Images\Home\CM000012.jpg" />
+    <Content Include="Images\Home\CM000013.jpg" />
+    <Content Include="Images\Home\CM000014.jpg" />
+    <Content Include="Images\Home\CM000016.jpg" />
+    <Content Include="Images\Home\CM000017.jpg" />
+    <Content Include="Images\Home\CM000018.jpg" />
+    <Content Include="Images\Home\CM000019.jpg" />
+    <Content Include="Images\Home\CM000020.jpg" />
+    <Content Include="Images\Home\CM000021.jpg" />
+    <Content Include="Images\Home\CM000023.JPG" />
+    <Content Include="Images\Home\CM000024.jpg" />
+    <Content Include="Images\Home\CM000025.jpg" />
+    <Content Include="Images\Home\CM000026.jpg" />
+    <Content Include="Images\Home\CM000027.jpg" />
+    <Content Include="Images\Home\CM000028.jpg" />
+    <Content Include="Images\Home\CM000029.jpg" />
+    <Content Include="Images\Home\CM000030.jpg" />
+    <Content Include="Images\Home\CM000031.jpg" />
+    <Content Include="Images\Home\CM000032.jpg" />
+    <Content Include="Images\Home\CM000033.jpg" />
+    <Content Include="Images\Home\CM000034.jpg" />
+    <Content Include="Images\Home\CM000035.jpg" />
+    <Content Include="Images\Home\CM000036.jpg" />
+    <Content Include="Images\Home\CM000037.jpg" />
+    <Content Include="Images\Home\CM000038.jpg" />
+    <Content Include="Images\Home\CM000039.jpg" />
+    <Content Include="Images\Home\CM000040.jpg" />
+    <Content Include="Images\Home\CM000041.jpg" />
+    <Content Include="Images\Home\CM000042.jpg" />
+    <Content Include="Images\Home\CM000043.jpg" />
+    <Content Include="Images\Home\CM000044.jpg" />
+    <Content Include="Images\Home\CM000045.jpg" />
+    <Content Include="Images\Home\CM000046.jpg" />
+    <Content Include="Images\Home\CM000047.jpg" />
+    <Content Include="Images\Home\CM000048.jpg" />
+    <Content Include="Images\Home\CM000049.jpg" />
+    <Content Include="Images\Home\CM000050.jpg" />
+    <Content Include="Images\Home\CM000051.jpg" />
+    <Content Include="Images\Home\CM000052.jpg" />
+    <Content Include="Images\Home\CM000053.jpg" />
+    <Content Include="Images\Home\CM000054.jpg" />
+    <Content Include="Images\Home\CM000055.jpg" />
+    <Content Include="Images\Home\CM000056.jpg" />
+    <Content Include="Images\Home\CM000057.jpg" />
+    <Content Include="Images\Home\CM000058.jpg" />
+    <Content Include="Images\Home\CM000059.jpg" />
+    <Content Include="Images\Home\CM000060.jpg" />
+    <Content Include="Images\Home\CM000061.jpg" />
+    <Content Include="Images\Home\CM000062.jpg" />
+    <Content Include="Images\Home\CM000063.jpg" />
+    <Content Include="Images\Home\CM000064.JPG" />
+    <Content Include="Images\Home\CM000065.jpg" />
+    <Content Include="Images\Home\CM000066.jpg" />
+    <Content Include="Images\Home\CM000067.jpg" />
+    <Content Include="Images\Home\CM000068.jpg" />
+    <Content Include="Images\Home\CM000069.jpg" />
+    <Content Include="Images\Home\CM000070.jpg" />
+    <Content Include="Images\Home\CM000071.jpg" />
+    <Content Include="Images\Home\CM000072.jpg" />
+    <Content Include="Images\Home\CM000073.jpg" />
+    <Content Include="Images\Home\CM000074.jpg" />
+    <Content Include="Images\Home\CM000075.jpg" />
+    <Content Include="Images\Home\CM000076.jpg" />
+    <Content Include="Images\Home\CM000077.jpg" />
+    <Content Include="Images\Home\CM000078.jpg" />
+    <Content Include="Images\Home\CM000079.jpg" />
+    <Content Include="Images\Home\CM000080.jpg" />
+    <Content Include="Images\Home\CM000081.jpg" />
+    <Content Include="Images\Home\CM000082.jpg" />
+    <Content Include="Images\Home\CM000083.jpg" />
+    <Content Include="Images\Home\CM000084.jpg" />
+    <Content Include="Images\Home\CM000085.jpg" />
+    <Content Include="Images\Home\CM000086.jpg" />
+    <Content Include="Images\Home\CM000087.jpg" />
+    <Content Include="Images\Home\CM000088.jpg" />
+    <Content Include="Images\Home\CM000089.jpg" />
+    <Content Include="Images\Home\CM000090.jpg" />
+    <Content Include="Images\Home\CM000091.jpg" />
+    <Content Include="Images\Home\CM000092.jpg" />
+    <Content Include="Images\Home\CM000093.jpg" />
+    <Content Include="Images\Home\DongHoIcon.png" />
+    <Content Include="Images\Home\down_arrow.png" />
+    <Content Include="Images\Home\FauvouriteLogo.jpg" />
+    <Content Include="Images\Home\Hot.gif" />
+    <Content Include="Images\Home\Icon-Slider-12-jQuery.png" />
+    <Content Include="Images\Home\Icon-Slider-12-No-jQuery.png" />
+    <Content Include="Images\Home\icon_5.png" />
+    <Content Include="Images\Home\LoginLogo.png" />
+    <Content Include="Images\Home\logo.png" />
+    <Content Include="Images\Home\logotop.png" />
+    <Content Include="Images\Home\LogoutLogo.png" />
+    <Content Include="Images\Home\s2.png" />
+    <Content Include="Images\Home\sale.gif" />
+    <Content Include="Images\Home\Slide1.jpg" />
+    <Content Include="Images\Home\Slide2.jpg" />
+    <Content Include="Images\Home\Slide3.jpg" />
+    <Content Include="Images\Home\Slide33.jpg" />
     <Content Include="Images\imagenotfound.jpg" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\common\angular-1.4.3\angular-animate.js" />
     <Content Include="Scripts\common\angular-1.4.3\angular-animate.min.js" />
     <Content Include="Scripts\common\angular-1.4.3\angular-aria.js" />
@@ -1111,6 +1384,14 @@
     <Content Include="Content\hethong\ionicons-2.0.1\fonts\ionicons.eot" />
     <Content Include="Content\hethong\ionicons-2.0.1\fonts\ionicons.ttf" />
     <Content Include="Content\hethong\ionicons-2.0.1\fonts\ionicons.woff" />
+    <Content Include="Images\Home\Descr.WD3" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\eCommerceManagement.pubxml" />
     <Content Include="Scripts\common\angular-1.4.3\angular-animate.min.js.map" />
     <Content Include="Scripts\common\angular-1.4.3\angular-aria.min.js.map" />
@@ -2282,6 +2563,157 @@
     <Content Include="Scripts\hethong\ChiTietHeThong.js" />
     <Content Include="Scripts\hethong\QuanLyTrangChu.js" />
     <Content Include="Scripts\hethong\QuanLyThemTheLoai.js" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\amazingcarousel.js" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_arrows-48-48-2.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_bullet-16-16-0.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_html5boxplayer.swf" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_html5boxplayer_fullscreen.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_html5boxplayer_hd.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_html5boxplayer_playpause.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_html5boxplayer_playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_html5boxplayer_volume.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_initcarousel-1.css" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_initcarousel-1.js" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_lightbox-close.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_lightbox-loading.gif" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_lightbox-next.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_lightbox-playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_1_lightbox-prev.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_arrows-48-48-2.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_bullet-16-16-0.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_html5boxplayer.swf" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_html5boxplayer_fullscreen.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_html5boxplayer_hd.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_html5boxplayer_playpause.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_html5boxplayer_playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_html5boxplayer_volume.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_initcarousel-1.css" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_initcarousel-1.js" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_lightbox-close.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_lightbox-loading.gif" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_lightbox-next.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_lightbox-playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag1_2_lightbox-prev.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_arrows-48-48-2.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_bullet-16-16-0.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_html5boxplayer.swf" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_html5boxplayer_fullscreen.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_html5boxplayer_hd.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_html5boxplayer_playpause.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_html5boxplayer_playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_html5boxplayer_volume.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_initcarousel-1.css" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_initcarousel-1.js" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_lightbox-close.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_lightbox-loading.gif" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_lightbox-next.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_lightbox-playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_1_lightbox-prev.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_arrows-48-48-2.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_bullet-16-16-0.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_html5boxplayer.swf" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_html5boxplayer_fullscreen.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_html5boxplayer_hd.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_html5boxplayer_playpause.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_html5boxplayer_playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_html5boxplayer_volume.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_initcarousel-1.css" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_initcarousel-1.js" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_lightbox-close.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_lightbox-loading.gif" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_lightbox-next.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_lightbox-playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag2_2_lightbox-prev.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_arrows-48-48-2.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_bullet-16-16-0.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_html5boxplayer.swf" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_html5boxplayer_fullscreen.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_html5boxplayer_hd.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_html5boxplayer_playpause.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_html5boxplayer_playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_html5boxplayer_volume.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_initcarousel-1.css" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_initcarousel-1.js" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_lightbox-close.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_lightbox-loading.gif" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_lightbox-next.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_lightbox-playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_1_lightbox-prev.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_arrows-48-48-2.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_bullet-16-16-0.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_html5boxplayer.swf" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_html5boxplayer_fullscreen.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_html5boxplayer_hd.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_html5boxplayer_playpause.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_html5boxplayer_playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_html5boxplayer_volume.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_initcarousel-1.css" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_initcarousel-1.js" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_lightbox-close.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_lightbox-loading.gif" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_lightbox-next.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_lightbox-playvideo.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\cag3_2_lightbox-prev.png" />
+    <Content Include="Scripts\Home\ProductSlider\carouselengine\jquery.js" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000009-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000009.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000010-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000010.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000011-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000011.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000012-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000012.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000013-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000013.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000014-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000014.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000016-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000016.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000017-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000017.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000018-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000018.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000019-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000019.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000020-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000020.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000021-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_1_CM000021.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000009-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000009.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000010-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000010.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000011-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000011.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000012-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000012.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000013-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000013.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000014-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000014.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000016-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000016.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000017-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000017.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000018-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000018.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000019-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000019.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000020-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000020.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000021-lightbox.jpg" />
+    <Content Include="Scripts\Home\ProductSlider\images\cag1_2_CM000021.jpg" />
+    <Content Include="Scripts\Home\SliderJS\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\Home\SliderJS\jssor.js" />
+    <Content Include="Scripts\Home\SliderJS\jssor.player.ytiframe.js" />
+    <Content Include="Scripts\Home\SliderJS\jssor.player.ytiframe.min.js" />
+    <Content Include="Scripts\Home\SliderJS\jssor.slider.js" />
+    <Content Include="Scripts\Home\SliderJS\jssor.slider.min.js" />
+    <Content Include="Scripts\Home\SliderJS\jssor.slider.mini.js" />
+    <Content Include="Scripts\Home\ZoomProduct\css\style.css" />
+    <Content Include="Scripts\Home\ZoomProduct\img\loading.gif" />
+    <Content Include="Scripts\Home\ZoomProduct\js\jquery-1.11.3.min.js" />
+    <Content Include="Scripts\Home\ZoomProduct\js\jqzoom.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -2314,9 +2746,9 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Dashboard.cshtml" />
-    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\HomeBK\About.cshtml" />
+    <Content Include="Views\HomeBK\Dashboard.cshtml" />
+    <Content Include="Views\HomeBK\Login.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\_Layout_Menu.cshtml" />
@@ -2344,24 +2776,24 @@
     <Content Include="Views\Error\NotFound.cshtml" />
     <Content Include="Views\Error\ThrowError.cshtml" />
     <Content Include="Views\Error\ServerError.cshtml" />
-    <Content Include="Views\Home\QuanLyTheLoai.cshtml" />
-    <Content Include="Views\Home\QuanLyThemTheLoai.cshtml" />
-    <Content Include="Views\Home\QuanLyCapNhatTheLoai.cshtml" />
-    <Content Include="Views\Home\QuanLyBanTin.cshtml" />
-    <Content Include="Views\Home\QuanLyThemBanTin.cshtml" />
-    <Content Include="Views\Home\QuanLyCapNhatBanTin.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyTheLoai.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyThemTheLoai.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyCapNhatTheLoai.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyBanTin.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyThemBanTin.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyCapNhatBanTin.cshtml" />
     <Content Include="Views\TinTuc\TrangChu.cshtml" />
     <Content Include="Views\TinTuc\TheLoai.cshtml" />
     <Content Include="Views\TinTuc\BanTin.cshtml" />
     <Content Include="Views\TinTuc\TimKiem.cshtml" />
-    <Content Include="Views\Home\QuanLyDanhMuc.cshtml" />
-    <Content Include="Views\Home\QuanLySanPhamTrongKho.cshtml" />
-    <Content Include="Views\Home\QuanLyNhanVien.cshtml" />
-    <Content Include="Views\Home\QuanLyThemNhanVien.cshtml" />
-    <Content Include="Views\Home\QuanLyCapNhatNhanVien.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyDanhMuc.cshtml" />
+    <Content Include="Views\HomeBK\QuanLySanPhamTrongKho.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyNhanVien.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyThemNhanVien.cshtml" />
+    <Content Include="Views\HomeBK\QuanLyCapNhatNhanVien.cshtml" />
     <Content Include="Views\Shared\_HeThong_Layout.cshtml" />
     <Content Include="Views\HeThong\QuanLyThemDanhMuc.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\HomeBK\Index.cshtml" />
     <Content Include="Views\HeThong\Login.cshtml" />
     <Content Include="Views\CuaHang\Login.cshtml" />
     <Content Include="Views\Shared\_CuaHang_Layout.cshtml" />
@@ -2408,18 +2840,39 @@
     <Content Include="Views\HeThong\QuanLyVanChuyen.cshtml" />
     <Content Include="Views\HeThong\QuanLyKhoanCach.cshtml" />
     <Content Include="Views\HeThong\ForgotPassword.cshtml" />
+    <Content Include="Scripts\Home\SliderJS\jssor.player.ytiframe.compress.bat" />
+    <Content Include="Scripts\Home\SliderJS\jssor.slider.debug.min.compress.bat" />
+    <Content Include="Scripts\Home\SliderJS\jssor.slider.min.compress.bat" />
+    <Content Include="Scripts\Home\SliderJS\jssor.slider.mini.compress.bat" />
     <None Include="Views\HeThong\ThongKeBinhLuan.cshtml" />
+    <Content Include="Views\Home\TrangChu.cshtml" />
+    <Content Include="Views\Home\ChiTietSanPham.cshtml" />
+    <Content Include="Views\Shared\View123123.cshtml" />
+    <Content Include="Views\Shared\HomeShared\ChiTietSanPhamPatial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\cuahang\" />
-    <Folder Include="Content\home\" />
     <Folder Include="Images\ChuyenMuc\" />
-    <Folder Include="Images\CuaHang\UtChuotStore\AnhBanTin\" />
-    <Folder Include="Images\CuaHang\UtChuotStore\AnhSanPham\" />
+    <Folder Include="Images\CuaHang\CH0000000000001\AnhBanTin\" />
+    <Folder Include="Images\CuaHang\CH0000000000001\AnhSanPham\" />
+    <Folder Include="Images\CuaHang\CH0000000000002\AnhBanTin\" />
+    <Folder Include="Images\CuaHang\CH0000000000002\AnhSanPham\" />
+    <Folder Include="Images\CuaHang\CH0000000000003\AnhBanTin\" />
+    <Folder Include="Images\CuaHang\CH0000000000003\AnhSanPham\" />
+    <Folder Include="Images\CuaHang\CH0000000000004\AnhBanTin\" />
+    <Folder Include="Images\CuaHang\CH0000000000004\AnhSanPham\" />
+    <Folder Include="Images\CuaHang\CH0000000000005\AnhBanTin\" />
+    <Folder Include="Images\CuaHang\CH0000000000005\AnhSanPham\" />
+    <Folder Include="Images\CuaHang\CH0000000000006\AnhBanTin\" />
+    <Folder Include="Images\CuaHang\CH0000000000006\AnhSanPham\" />
+    <Folder Include="Images\CuaHang\CH0000000000007\AnhBanTin\" />
+    <Folder Include="Images\CuaHang\CH0000000000007\AnhSanPham\" />
+    <Folder Include="Images\CuaHang\CH0000000000008\AnhBanTin\" />
+    <Folder Include="Images\CuaHang\CH0000000000008\AnhSanPham\" />
     <Folder Include="Scripts\common\angular-1.4.3\i18n\ngLocale\" />
     <Folder Include="Scripts\cuahang\" />
-    <Folder Include="Scripts\home\" />
+    <Folder Include="Views\GioHang\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
@@ -2464,6 +2917,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
