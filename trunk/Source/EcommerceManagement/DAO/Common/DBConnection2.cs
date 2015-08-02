@@ -11,7 +11,7 @@ namespace DAOs.Common
 {
     public class DBConnection2
     {
-        public static string Chuoi_Ket_Noi = @"Data Source=WINDOWS\SQLEXPRESS;Initial Catalog=TMDTDB11;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public static string Chuoi_Ket_Noi = ConfigurationManager.ConnectionStrings["DefaultConnection"].ToString();
         //private static String Chuoi_Ket_Noi = System.Configuration.ConfigurationSettings.AppSettings.con
         public static SqlConnection _SqlConnection;
         public static SqlTransaction transaction;

@@ -49,6 +49,85 @@ namespace DAOs.DAO
             return result;
         }
 
+        public List<VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO> getCuaHangDoanhThuCao(int Month, int Year)
+        {
+            List<VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO> dsCuaHang = new List<VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO>();
+
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                openConnection();
+                SqlDataReader dataReader;
+                dataReader = null;
+                cmd.CommandText = @"SELECT TOP 10 WITH TIES CH.MACUAHANG
+                                          ,CH.TENCUAHANG
+                                          ,CH.HOTENCHUCUAHANG
+                                          ,CH.MOTA
+                                          ,CH.CHUNGNHAN
+                                          ,CH.TRANGTHAI
+	                                      ,COALESCE(SUM(COALESCE(HD.TONGTIEN,0)),0) AS DOANHTHU
+                                      FROM SF_CUAHANG AS CH LEFT JOIN SF_HOADON AS HD
+                                      ON CH.MACUAHANG = HD.MACUAHANG
+                                      AND HD.TRANGTHAIHOADON = 1
+                                      WHERE MONTH(NGAYTAO) = @Month
+                                      AND YEAR(NGAYTAO) = @Year
+                                      GROUP BY CH.MACUAHANG
+                                          ,CH.TENCUAHANG
+                                          ,CH.HOTENCHUCUAHANG
+                                          ,CH.MOTA
+                                          ,CH.CHUNGNHAN
+                                          ,CH.TRANGTHAI
+	                                      ,NGAYTAO
+                                      ORDER BY DOANHTHU DESC";
+
+                cmd.Parameters.Add("@Month", SqlDbType.Int).Value = Month;
+                cmd.Parameters.Add("@Year", SqlDbType.Int).Value = Year;
+
+                cmd.Connection = conn;
+                cmd.Transaction = transaction;
+                cmd.CommandType = CommandType.Text;
+
+                try
+                {
+                    dataReader = cmd.ExecuteReader();
+
+                    if (dataReader != null)
+                    {
+                        while (dataReader.Read())
+                        {
+                            VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO item = new VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO();
+
+                            //item.DanhMucGuid = (Guid)dataReader["DanhMucGuid"];
+                            //item.DanhMucID = (Int32)dataReader["DanhMucID"];
+                            //item.DanhMucName = (String)dataReader["DanhMucName"];
+                            //item.TrangThai = (Boolean)dataReader["TrangThai"];
+
+                            item.MACUAHANG = (String)dataReader["MACUAHANG"];
+                            item.TENCUAHANG = (String)dataReader["TENCUAHANG"];
+                            item.HOTENCHUCUAHANG = (String)dataReader["HOTENCHUCUAHANG"];
+                            item.MOTA = (String)dataReader["MOTA"];
+                            item.CHUNGNHAN = Convert.ToInt16(dataReader["CHUNGNHAN"]);
+                            item.CHUNGNHAN = Convert.ToInt16(dataReader["CHUNGNHAN"]);
+                            item.DOANHTHU = Convert.ToDecimal(dataReader["DOANHTHU"]);
+
+                            dsCuaHang.Add(item);
+                        }
+                    }
+
+                    return dsCuaHang;
+                }
+                catch (Exception ex)
+                {
+                    errorTransaction(ex);
+                    return new List<VIEW_CUAHANG_DASHBOARD_DOANHTHUDTO>();
+                }
+                finally
+                {
+                    dataReader.Close();
+                    closeConnection();
+                }
+            }
+        }
+
         //public Hashtable xoaDanhMuc(Request_Xoa_DanhMucDTO param)
         //{
         //    Hashtable result = new Hashtable();

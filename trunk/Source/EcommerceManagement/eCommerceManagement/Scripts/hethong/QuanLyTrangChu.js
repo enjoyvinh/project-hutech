@@ -34,7 +34,8 @@ QuanLyTrangChuModule.factory('QuanLyTrangChuModel', ['BaseModel',
 		            phantramloinhuan: 0,
 		            tonggiatriloinhuan: 0,
 		        },
-		        list: [],
+		        listDSCuaHang: [],
+		        listDSHoaDon: [],
 		    };
 
 		    return model;
@@ -155,19 +156,47 @@ QuanLyTrangChuModule.controller('QuanLyTrangChuControl', function ($rootScope,
             });
         };
 
-        //$scope.doThongKe = function () {
+        $scope.getDanhSachCuaHang = function (month, year) {
 
-        //    $rootScope.$broadcast('doPost', {
-        //        action: 'api/API_HeThong_CuaHang/doDashboard',
-        //        params: {},
-        //        callback: function (result) {
+            var param = {
+                thang: month,
+                nam: year,
+            }
 
-        //        }
-        //    });
-        //};
+            $rootScope.$broadcast('doPost', {
+                action: 'api/API_HeThong_Dashboard/getCuaHangDoanhThuCao',
+                params: param,
+                callback: function (result) {
+                    $scope.model.form.listDSCuaHang = result.dsCuaHang;
+                }
+            });
+        };
+
+        $scope.getDanhSachHoaDon = function (month, year) {
+            var param = {
+                thang: month,
+                nam: year,
+            }
+            $rootScope.$broadcast('doPost', {
+                action: 'api/API_HeThong_Dashboard/getHoaDonGiaTriCaoNhat',
+                params: param,
+                callback: function (result) {
+                    console.log(result);
+                    $scope.model.form.listDSHoaDon = result.dsHoaDon;
+                }
+            });
+        };
 
         setTimeout(function () {
             $scope.doThongKe();
+
+            var d = new Date();
+
+            var month = d.getMonth() + 1;
+            var year = d.getFullYear();
+
+            $scope.getDanhSachCuaHang(month, year);
+            $scope.getDanhSachHoaDon(month, year);
         }, 1000);
     };
 

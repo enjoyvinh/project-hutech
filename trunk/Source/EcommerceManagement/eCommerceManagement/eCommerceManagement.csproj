@@ -210,6 +210,7 @@
     <Compile Include="Controllers\APIQLNhanVienController.cs" />
     <Compile Include="Controllers\APIQLTheLoaiController.cs" />
     <Compile Include="Controllers\APIQLBanTinController.cs" />
+    <Compile Include="Controllers\API_HeThong_CuaHangController.cs" />
     <Compile Include="Controllers\API_HeThong_DashboardController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\CuaHangController.cs" />
@@ -317,6 +318,7 @@
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\fonts\ionicons.svg" />
+    <Content Include="Content\hethong\angular-ui-tree.min.css" />
     <Content Include="Content\hethong\bootstrap-datetimepicker.css" />
     <Content Include="Content\hethong\bootstrap-switch.css" />
     <Content Include="Content\hethong\bootstrap-switch.min.css" />
@@ -934,6 +936,7 @@
     <Content Include="Content\hethong\nguploadfile.css" />
     <Content Include="Content\Home\MenuTop.css" />
     <Content Include="Content\quanly\AdminLTE.min.css" />
+    <Content Include="Content\quanly\filemanager\angular-filemanager.css" />
     <Content Include="Content\quanly\skins\skin-black-light.css" />
     <Content Include="Content\quanly\skins\skin-black-light.min.css" />
     <Content Include="Content\quanly\skins\skin-blue-light.css" />
@@ -949,6 +952,42 @@
     <Content Include="favicon.png" />
     <Content Include="Images\1377315993_banner.png" />
     <Content Include="Images\AvatarKhachHang\manager%40skyfire.vn.jpg" />
+    <Content Include="Images\bg-tab.png" />
+    <Content Include="Images\bg.png" />
+    <Content Include="Images\bg_nav.png" />
+    <Content Include="Images\btop.png" />
+    <Content Include="Images\ChuyenMuc\maubac.png" />
+    <Content Include="Images\ChuyenMuc\maucam.png" />
+    <Content Include="Images\ChuyenMuc\mauden.png" />
+    <Content Include="Images\ChuyenMuc\maudo.png" />
+    <Content Include="Images\ChuyenMuc\mauhoatiet.png" />
+    <Content Include="Images\ChuyenMuc\mauhongphan.png" />
+    <Content Include="Images\ChuyenMuc\maukem.png" />
+    <Content Include="Images\ChuyenMuc\maukhac.png" />
+    <Content Include="Images\ChuyenMuc\maunau.png" />
+    <Content Include="Images\ChuyenMuc\mausoc.png" />
+    <Content Include="Images\ChuyenMuc\mautim.png" />
+    <Content Include="Images\ChuyenMuc\mautrang.png" />
+    <Content Include="Images\ChuyenMuc\mauvang.png" />
+    <Content Include="Images\ChuyenMuc\mauxam.png" />
+    <Content Include="Images\ChuyenMuc\mauxanhden.png" />
+    <Content Include="Images\ChuyenMuc\mauxanhla.png" />
+    <Content Include="Images\ChuyenMuc\mauxanhngoc.png" />
+    <Content Include="Images\ChuyenMuc\mauxanhnuocbien.png" />
+    <Content Include="Images\ChuyenMuc\mauxanhreu.png" />
+    <Content Include="Images\CuaHang\CH0000000000001\CH0000000000001.jpg" />
+    <Content Include="Images\CuaHang\CH0000000000002\CH0000000000002.jpg" />
+    <Content Include="Images\CuaHang\CH0000000000003\CH0000000000003.png" />
+    <Content Include="Images\CuaHang\CH0000000000004\CH0000000000004.jpg" />
+    <Content Include="Images\CuaHang\CH0000000000005\CH0000000000005.jpg" />
+    <Content Include="Images\CuaHang\CH0000000000006\CH0000000000006.jpg" />
+    <Content Include="Images\CuaHang\CH0000000000007\CH0000000000007.jpg" />
+    <Content Include="Images\CuaHang\CH0000000000008\CH0000000000008.jpg" />
+    <Content Include="Images\CuaHang\Shop_No_Avatar.png" />
+    <Content Include="Images\demobar %281%29.jpg" />
+    <Content Include="Images\demobar.jpg" />
+    <Content Include="Images\dot1.png" />
+    <Content Include="Images\home.png" />
     <Content Include="Images\Home\a01.png" />
     <Content Include="Images\Home\a02.png" />
     <Content Include="Images\Home\a03.png" />
@@ -1117,7 +1156,17 @@
     <Content Include="Images\Home\Slide2.jpg" />
     <Content Include="Images\Home\Slide3.jpg" />
     <Content Include="Images\Home\Slide33.jpg" />
+    <Content Include="Images\iconstat.png" />
+    <Content Include="Images\ico_side.png" />
     <Content Include="Images\imagenotfound.jpg" />
+    <Content Include="Images\li_header_menu.png" />
+    <Content Include="Images\li_tab.png" />
+    <Content Include="Images\next.png" />
+    <Content Include="Images\online.gif" />
+    <Content Include="Images\pause.png" />
+    <Content Include="Images\play.png" />
+    <Content Include="Images\prev.png" />
+    <Content Include="Images\search.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -2853,7 +2902,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\cuahang\" />
-    <Folder Include="Images\ChuyenMuc\" />
     <Folder Include="Images\CuaHang\CH0000000000001\AnhBanTin\" />
     <Folder Include="Images\CuaHang\CH0000000000001\AnhSanPham\" />
     <Folder Include="Images\CuaHang\CH0000000000002\AnhBanTin\" />

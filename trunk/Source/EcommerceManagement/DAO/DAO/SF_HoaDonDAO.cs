@@ -133,6 +133,77 @@ namespace DAOs.DAO
             return result;
         }
 
+        public List<VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO> getHoaDonGiaTriCaoNhat(REQUEST_NGAYTHANGNAMDTO param)
+        {
+            List<VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO> dsHoaDon = new List<VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO>();
+
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                openConnection();
+                SqlDataReader dataReader;
+                dataReader = null;
+                cmd.CommandText = @"SELECT DISTINCT TOP 5 
+                                             HD.SOHOADON
+		                                    ,HD.NGAYLAP
+		                                    ,HD.TONGTIEN
+                                            ,CH.MACUAHANG
+		                                    ,COALESCE(CH.HINHLOGO,'SHOP_NOIMAGE') AS HINHLOGO
+                                    FROM SF_HOADON AS HD LEFT JOIN SF_CUAHANG AS CH
+                                    ON HD.MACUAHANG = CH.MACUAHANG
+                                    WHERE HD.TRANGTHAIHOADON = 1 ";
+
+                if(CheckValid.ValidIsNumeric(param.THANG.ToString()))
+                {
+                    cmd.CommandText += @" AND MONTH(NGAYTAO) = @Month ";
+                    cmd.Parameters.Add("@Month", SqlDbType.Int).Value = param.THANG;
+                }
+                if (CheckValid.ValidIsNumeric(param.THANG.ToString()))
+                {
+                    cmd.CommandText += @" AND YEAR(NGAYTAO) = @Year ";
+                    cmd.Parameters.Add("@Year", SqlDbType.Int).Value = param.NAM;
+                }
+
+                cmd.CommandText += @"ORDER BY TONGTIEN DESC";
+
+                cmd.Connection = conn;
+                cmd.Transaction = transaction;
+                cmd.CommandType = CommandType.Text;
+
+                try
+                {
+                    dataReader = cmd.ExecuteReader();
+
+                    if (dataReader != null)
+                    {
+                        while (dataReader.Read())
+                        {
+                            VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO item = new VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO();
+
+                            item.MACUAHANG = (String)dataReader["MACUAHANG"];
+                            item.AVATARCUAHANG = (String)dataReader["HINHLOGO"];
+                            item.NGAYLAP = (DateTime)dataReader["NGAYLAP"];
+                            item.SOHOADON = (String)dataReader["SOHOADON"];
+                            item.TONGTIEN = (Decimal)dataReader["TONGTIEN"];
+
+                            dsHoaDon.Add(item);
+                        }
+                    }
+
+                    return dsHoaDon;
+                }
+                catch (Exception ex)
+                {
+                    errorTransaction(ex);
+                    return new List<VIEW_HOADON_DASHBOARD_GIATRICAONHATDTO>();
+                }
+                finally
+                {
+                    dataReader.Close();
+                    closeConnection();
+                }
+            }
+        }
+
         //public Hashtable xoaDanhMuc(Request_Xoa_DanhMucDTO param)
         //{
         //    Hashtable result = new Hashtable();

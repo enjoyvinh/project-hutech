@@ -55,20 +55,16 @@ namespace DAOs.Common
             return false;
         }
 
-        public static Boolean ValidIsNumeric(string title, String value, out string errorMessage)
+        public static Boolean ValidIsNumeric(String value)
         {
-
             foreach (char c in value)
             {
                 if (!char.IsDigit(c) && c != '.')
                 {
-                    errorMessage = "Vui Lòng Nhập Số.";
-                    return true;
+                    return false;
                 }
             }
-
-            errorMessage = "";
-            return false;
+            return true;
         }
     }
 }
