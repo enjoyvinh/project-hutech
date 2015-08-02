@@ -1,0 +1,150 @@
+﻿@using DAOs.DAO;
+@using System.Data;
+@{
+    SanPhamDAO _SanPhamDAO = new SanPhamDAO();
+    DataTable tblDSHinhAnh = new DataTable();
+    string Masp = ViewData["MaSanPham"].ToString();
+    tblDSHinhAnh = _SanPhamDAO.HinhAnhTheoMaSanPham(Masp);
+}
+<link href="~/Scripts/Home/ZoomProduct/css/style.css" rel="stylesheet" />
+<div class="row">
+    <div class="col-md-4" style="height:600px; padding-left:70px">
+        <div class="bzoom_wrap">
+            <ul id="bzoom">
+                @{
+                    if (tblDSHinhAnh.Rows.Count > 0)
+                    {
+                        string MaCuaHangZoom = tblDSHinhAnh.Rows[0]["MACUAHANG"].ToString();
+                        for (int i = 0; i < tblDSHinhAnh.Rows.Count; i++)
+                        {
+                            string TenHASPZoom = tblDSHinhAnh.Rows[i]["TENHINHANH"].ToString();
+                            <li>
+                                <img class="bzoom_thumb_image" src="~/Images/CuaHang/@MaCuaHangZoom/AnhSanPham/@TenHASPZoom" />
+                                <img class="bzoom_big_image" src="~/Images/CuaHang/@MaCuaHangZoom/AnhSanPham/@TenHASPZoom" />
+                            </li>
+                        }
+                    }
+                }
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+
+        <table class="table" style="font-size:15px">
+            @{
+                DataTable ChiTietSanPhamTheoMaSanPhamTbl = new DataTable();
+                ChiTietSanPhamTheoMaSanPhamTbl = _SanPhamDAO.ChiTietSanPhamTheoMaSanPham(Masp);
+                <tr>
+                    <th style="font-size:20px">
+                        <b>@ChiTietSanPhamTheoMaSanPhamTbl.Rows[0]["TENSANPHAM"].ToString()</b>
+                    </th>
+                </tr>
+                    <tr>
+                        <th>Giá Cũ: <span style="text-decoration:line-through">@ChiTietSanPhamTheoMaSanPhamTbl.Rows[0]["DONGIACU"].ToString() VND</span></th>
+                        <th>
+                            Giá Mới <span class="label label-success">-@ChiTietSanPhamTheoMaSanPhamTbl.Rows[0]["PHANTRAMGIAMGIA"].ToString()%</span> :
+                            @ChiTietSanPhamTheoMaSanPhamTbl.Rows[0]["DONGIAMOI"].ToString() VND
+                        </th>
+                    </tr>
+            }
+            @{
+                DataTable DSThuocTinhTheoMaSanPhamTbl = new DataTable();
+                DSThuocTinhTheoMaSanPhamTbl = _SanPhamDAO.DSThuocTinhTheoMaSanPham(Masp);
+                for (int i = 0; i < DSThuocTinhTheoMaSanPhamTbl.Rows.Count; i++)
+                {
+                    if (DSThuocTinhTheoMaSanPhamTbl.Rows[i]["MATHUOCTINH"].ToString() == "TT00000005")
+                    {
+                        string Matt = DSThuocTinhTheoMaSanPhamTbl.Rows[i]["MATHUOCTINH"].ToString();
+                        <tr>
+                            <th>@DSThuocTinhTheoMaSanPhamTbl.Rows[i]["TENTHUOCTINH"].ToString()</th>
+                            <th>
+                                <span class="label label-primary" style="color:red;background-color:aliceblue">
+                                    @{
+                                        DataTable DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinhTbl = new DataTable();
+                                        DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinhTbl = _SanPhamDAO.DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinh(Masp, "TT00000005");
+                                        for (int j = 0; j < DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinhTbl.Rows.Count; j++)
+                                        {
+                                            <img src="~/Images/ChuyenMuc/@DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinhTbl.Rows[j]["ICON"].ToString()" />
+                                        }
+                                    }
+
+                                </span>
+                            </th>
+                        </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <th>@DSThuocTinhTheoMaSanPhamTbl.Rows[i]["TENTHUOCTINH"].ToString()</th>
+                                                <th>
+
+                                                    <span class="label label-primary" style="color:red;background-color:aliceblue">
+                                                        @{
+                                                            string Matt = DSThuocTinhTheoMaSanPhamTbl.Rows[i]["MATHUOCTINH"].ToString();
+                                                            DataTable DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinhTbl = new DataTable();
+                                                            DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinhTbl = _SanPhamDAO.DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinh(Masp, Matt);
+                                                            for (int j = 0; j < DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinhTbl.Rows.Count; j++)
+                                                            {
+                                                                @DSChiTietThuocTinhTheoMaSanPhamVaMaThuocTinhTbl.Rows[j]["TENGIATRITHUOCTINH"].ToString() <span>.</span>
+                                                            }
+                                                        }
+                                                    </span>
+                                                </th>
+                                            </tr>
+                                                                }
+
+                                                            }
+            }
+
+
+
+            <tr><th>số lượng</th><th>a</th>
+        </table>
+
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <p>
+                    <a class="btn btn-primary btn-lg" href="~/GioHang/ThemVaoGioHang?id=@Masp" role="button" style="color:white;background-color:green">
+                        <img src="~/Images/Home/cartlogo.png" height="60px" width="60px" />
+                        thêm vào giỏ hàng
+                    </a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <a class="btn btn-primary btn-lg" href="" role="button" style="color:white;background-color:green">
+                        <img src="~/Images/Home/check.png" height="60px" width="60px" />
+                        Mua Ngay
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/Home/ZoomProduct/js/jquery-1.11.3.min.js"></script>
+<script src="~/Scripts/Home/ZoomProduct/js/jqzoom.js"></script>
+<script type="text/javascript">
+$("#bzoom").zoom({
+	zoom_area_width: 300,
+    autoplay_interval :3000,
+    small_thumbs : 4,
+    autoplay : false
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
